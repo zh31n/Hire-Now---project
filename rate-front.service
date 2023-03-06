@@ -1,0 +1,14 @@
+[Unit]
+Description=rate-front
+After=network.service
+ 
+[Install]
+WantedBy=multi-user.target
+ 
+[Service]
+Type=simple
+PIDFile=/var/run/rate-front.pid
+WorkingDirectory=/var/www/rate/front
+ExecStart=/usr/bin/npm run start
+TimeoutSec=10
+Restart=always
