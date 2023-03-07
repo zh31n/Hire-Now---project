@@ -1,5 +1,6 @@
 <template>
     <div class="changeCart">
+        <OrderNoComplete />
         <div class="container">
             <div class="changeCart_i">
                 <div class="r_side">
@@ -134,10 +135,13 @@
 
 <script>
 import RespCard from '../../components/MyOrders/RespCard.vue'
+import OrderNoComplete from '../../components/Modals/OrderNoComplete.vue'
+
 
 export default {
     components: {
-        RespCard
+        RespCard,
+        OrderNoComplete
     }
 }
 </script>
