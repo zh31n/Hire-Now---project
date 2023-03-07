@@ -4,7 +4,7 @@
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
-                    <PanelInformation class="PanelInformation" />
+                    <PanelInformation />
                     <div class="orderCart">
                         <div class="order_info">
                             <img src="../../assets/images/orderCart/Компьтерная помощь.svg" alt="">
