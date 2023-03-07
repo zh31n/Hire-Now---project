@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <OrderCompleted />
+        <OrderInProgress />
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
@@ -69,12 +69,12 @@
 
 <script>
 import PanelInformation from '../../components/MyOrders/PanelInformation.vue';
-import OrderCompleted from '../../components/Modals/OrderCompleted.vue'
+import OrderInProgress from '../../components/Modals/OrderInProgress.vue'
 
 export default {
     components: {
         PanelInformation,
-        OrderCompleted
+        OrderInProgress
     }
 }
 </script>
