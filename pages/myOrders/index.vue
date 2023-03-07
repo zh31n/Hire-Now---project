@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <ModalChoosePerformer />
+        <OrderCompleted />
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
@@ -69,12 +69,12 @@
 
 <script>
 import PanelInformation from '../../components/MyOrders/PanelInformation.vue';
-import ModalChoosePerformer from '../../components/Modals/ModalChoosePerformer.vue'
+import OrderCompleted from '../../components/Modals/OrderCompleted.vue'
 
 export default {
     components: {
         PanelInformation,
-        ModalChoosePerformer
+        OrderCompleted
     }
 }
 </script>
