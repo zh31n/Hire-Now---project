@@ -1,6 +1,7 @@
 <template>
   <div class="header">
     <Notifications style="display: none;"/>
+    <ModalMessages />
     <div class="container">
       <div class="header_i">
         <div class="nav">
@@ -21,11 +22,12 @@
 </template>
 
 <script>
+import ModalMessages from './Modals/ModalMessages.vue';
 import Notifications from './Modals/Notifications.vue';
 
 
 export default {
-    components: { Notifications }
+    components: { Notifications, ModalMessages }
 }
 </script>
 
