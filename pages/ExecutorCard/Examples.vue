@@ -1,35 +1,38 @@
 <template>
-    <div class="container">
-        <div class="examples">
-            <div class="examples_i">
-                <div class="btn_back">
-                    <img src="../../assets/images/Arrow.svg" alt="arrow">
-                    <span>Вернуться в профиль</span>
+    <div class="exmpls">
+        <OfferTask />
+        <div class="container">
+            <div class="examples">
+                <div class="examples_i">
+                    <div class="btn_back">
+                        <img src="../../assets/images/Arrow.svg" alt="arrow">
+                        <span>Вернуться в профиль</span>
+                    </div>
+                    <div class="e_title">Создание сайтов "Под ключ"</div>
+                    <div class="e_sup">В данном фотоальбоме представлены выполненные работы "под ключ"</div>
+                    <div class="exapmle_blocks">
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                        <div class="ex_block"></div>
+                    </div>
+                    <div class="btn_back">
+                        <img src="../../assets/images/Arrow.svg" alt="arrow">
+                        <span>Вернуться в профиль</span>
+                    </div>
                 </div>
-                <div class="e_title">Создание сайтов "Под ключ"</div>
-                <div class="e_sup">В данном фотоальбоме представлены выполненные работы "под ключ"</div>
-                <div class="exapmle_blocks">
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                    <div class="ex_block"></div>
-                </div>
-                <div class="btn_back">
-                    <img src="../../assets/images/Arrow.svg" alt="arrow">
-                    <span>Вернуться в профиль</span>
-                </div>
-            </div>
-            <div class="side_offer">
-                <div class="offer_job_btn">Предложить задание</div>
-                <div class="offer_job_sup">
-                    Исполнитель получит уведомление<br>
-                    и сможет оказать вам свои услуги
+                <div class="side_offer">
+                    <div class="offer_job_btn">Предложить задание</div>
+                    <div class="offer_job_sup">
+                        Исполнитель получит уведомление<br>
+                        и сможет оказать вам свои услуги
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,6 +40,14 @@
 </template>
 
 <script>
+import OfferTask from '../../components/Modals/OfferTask.vue';
+
+
+export default {
+    components: {
+    OfferTask
+}
+}
 
 </script>
 
@@ -66,6 +77,7 @@
         font-size: 14px;
         color: #2D9CDB;
         margin-top: 2rem;
+        cursor: pointer;
 
         span {
             border-bottom: 1px solid #2D9CDB;
@@ -110,7 +122,7 @@
         cursor: pointer;
     }
 
-    .offer_job_sup{
+    .offer_job_sup {
         text-align: center;
         font-size: 16px;
         color: #6FC727;
