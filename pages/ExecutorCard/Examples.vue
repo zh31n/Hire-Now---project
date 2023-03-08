@@ -1,6 +1,6 @@
 <template>
     <div class="exmpls">
-        <CreateOfferTask />
+        <CreatedOfferTask />
         <div class="container">
             <div class="examples">
                 <div class="examples_i">
@@ -40,12 +40,12 @@
 </template>
 
 <script>
-import CreateOfferTask from '../../components/Modals/CreateOfferTask.vue';
+import CreatedOfferTask from '../../components/Modals/CreatedOfferTask.vue';
 
 
 export default {
     components: {
-        CreateOfferTask
+        CreatedOfferTask
     }
 }
 
