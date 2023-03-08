@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <Notifications style="display: none;"/>
-    <ModalMessages />
+    <ModalMessages style="display: none;"/>
     <div class="container">
       <div class="header_i">
         <div class="nav">
