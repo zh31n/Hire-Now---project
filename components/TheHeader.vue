@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <Notifications style="display: none;"/>
     <div class="container">
       <div class="header_i">
         <div class="nav">
@@ -20,9 +21,11 @@
 </template>
 
 <script>
+import Notifications from './Modals/Notifications.vue';
+
 
 export default {
-
+    components: { Notifications }
 }
 </script>
 
@@ -32,6 +35,8 @@ export default {
   width: 100%;
   border-bottom: 1px solid #F0F0F0;
   height: 60px;
+  position: relative !important;
+  z-index: 1000 !important;
 }
 
 .header_i {

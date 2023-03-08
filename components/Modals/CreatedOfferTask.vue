@@ -27,14 +27,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-.sup{
+.sup {
     font-size: 16px;
     font-weight: 400;
     color: #22305F;
     text-align: center;
     margin-top: 4rem;
 }
+
 .modal_task {
     position: fixed;
     height: 100%;

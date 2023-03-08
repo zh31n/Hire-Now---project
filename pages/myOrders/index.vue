@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <OrderInProgress />
+        <OrderInProgress style="display: none;"/>
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
