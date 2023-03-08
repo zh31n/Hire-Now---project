@@ -1,0 +1,119 @@
+<template>
+    <div class="container">
+        <div class="examples">
+            <div class="examples_i">
+                <div class="btn_back">
+                    <img src="../../assets/images/Arrow.svg" alt="arrow">
+                    <span>Вернуться в профиль</span>
+                </div>
+                <div class="e_title">Создание сайтов "Под ключ"</div>
+                <div class="e_sup">В данном фотоальбоме представлены выполненные работы "под ключ"</div>
+                <div class="exapmle_blocks">
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                    <div class="ex_block"></div>
+                </div>
+                <div class="btn_back">
+                    <img src="../../assets/images/Arrow.svg" alt="arrow">
+                    <span>Вернуться в профиль</span>
+                </div>
+            </div>
+            <div class="side_offer">
+                <div class="offer_job_btn">Предложить задание</div>
+                <div class="offer_job_sup">
+                    Исполнитель получит уведомление<br>
+                    и сможет оказать вам свои услуги
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+
+</script>
+
+<style scoped lang="scss">
+.examples {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .e_title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #22305F;
+        margin-top: 1rem;
+    }
+
+    .e_sup {
+        font-size: 16px;
+        color: #22305F;
+    }
+
+    .btn_back {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 14px;
+        color: #2D9CDB;
+        margin-top: 2rem;
+
+        span {
+            border-bottom: 1px solid #2D9CDB;
+            margin-left: .5rem;
+            line-height: normal;
+        }
+    }
+
+    .exapmle_blocks {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        align-items: flex-start;
+        width: 700px;
+        height: 1810px;
+        flex-wrap: wrap;
+
+        .ex_block {
+            width: 326px;
+            height: 326px;
+            background-color: #D9D9D9;
+            border-radius: 20px;
+        }
+    }
+}
+
+.side_offer {
+    padding-top: 4rem;
+
+    .offer_job_btn {
+        width: 302px;
+        height: 50px;
+        background: #6FC727;
+        border-radius: 60px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        margin-right: auto;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .offer_job_sup{
+        text-align: center;
+        font-size: 16px;
+        color: #6FC727;
+    }
+}
+</style>
