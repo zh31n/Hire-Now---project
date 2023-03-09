@@ -313,6 +313,30 @@
                                 <div class="btn">Сохранить</div>
                             </div>
                         </div>
+                        <div class="security">
+                            <div class="title">Изменить пароль</div>
+                            <div class="sup">Придумайте новый пароль с такими требованиями:</div>
+                            <ul>
+                                <li>длина — не менее 8 символов;</li>
+                                <li>заглавные буквы;</li>
+                                <li>строчные буквы;</li>
+                                <li>цифры или специальные символы: %, #, $ и другие.</li>
+                            </ul>
+                            <div class="pd_input">
+                                <div>Новый пароль</div>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="pd_input">
+                                <div>Повторите пароль</div>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="btn">Сохранить</div>
+                            <div class="title">Активные сессии</div>
+                            <div class="sessions">
+                                <img src="../../assets/images/tv.svg" alt="">
+                                Текущая — Windows, 2 февраля в 00:00, браузер Opera
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="side_bar">
@@ -1074,5 +1098,56 @@ export default {
     align-items: center;
     color: #22305F;
     width: 55%;
+}
+
+.security {
+    .title {
+        color: #22305F;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .sup {
+        font-size: 14px;
+        margin-bottom: 1rem;
+        color: #22305F;
+    }
+
+    ul {
+        color: #828282;
+        font-size: 12px;
+        list-style: disc;
+        margin-bottom: 2rem;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        width: 240px;
+        height: 55px;
+        background: #6FC727;
+        border-radius: 60px;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .sessions {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        img {
+            margin-right: 0.4rem;
+        }
+    }
 }
 </style>
