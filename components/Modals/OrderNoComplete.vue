@@ -59,7 +59,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
+    z-index: 2000;
     transition: .3s all;
     display: flex;
     justify-content: center;

@@ -14,7 +14,7 @@
           <img src="../assets/images/Язык.svg" alt="">
           <img src="../assets/images/Сообщения.svg" alt="">
           <img src="../assets/images/bell.svg" alt="">
-          <img src="../assets/images/Аватар.svg" alt="">
+          <NuxtLink to="/Profile"><img src="../assets/images/Аватар.svg" alt=""></NuxtLink>
         </div>
       </div>
     </div>
