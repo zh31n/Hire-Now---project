@@ -31,8 +31,8 @@
                     </div>
                     <div class="profile_tab">
                         <div class="about_and_money">
-                            <span class="btn_tab active">Обо мне</span>
-                            <span class="btn_tab">Счет</span>
+                            <span class="btn_tab ">Обо мне</span>
+                            <span class="btn_tab active">Счет</span>
                         </div>
                         <div class="shesternya">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,24 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="profile_score">
+                        <div class="balance">Ваш баланс <span>0</span> ₽</div>
+                        <div class="replenish_balance">
+                            Пополнить счет на
+                            <input class="replBal_inp">
+                            ₽
+                            <div class="replBal_btn">Пополнить счет</div>
+                        </div>
+                        <div class="opration_history">
+                            <div class="oh_title">История операций</div>
+                            <div class="oh_filter">
+                                <span class="active">Все операции</span>
+                                <span>Пополнения счета</span>
+                                <span>Списавния со счета</span>
+                            </div>
+                            <div class="oh_suop">За данный период транзакций не было</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="side_bar">
                     <div class="title">Исполнитель</div>
@@ -511,5 +528,91 @@ export default {
     margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 17px;
+}
+
+.profile_score {
+    .balance {
+        font-size: 22px;
+        font-weight: 700;
+        color: #22305F;
+        margin-bottom: 1rem;
+    }
+
+    .replenish_balance {
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        color: #22305F;
+        margin-top: 1rem;
+
+        .replBal_inp {
+            width: 135px;
+            height: 45px;
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            outline: 0;
+            padding-left: 0.5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        .replBal_btn {
+            width: 165px;
+            height: 45px;
+            background: #6FC727;
+            border-radius: 60px;
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.opration_history {
+    width: 640px;
+    height: 220px;
+    background: #FDEAC2;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .oh_title{
+        font-size: 22px;
+        color: #22305F;
+        font-weight: 700;
+    }
+
+    .oh_filter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        font-size: 14px;
+        color: #2D9CDB;
+        font-weight: 400;
+        span{
+            cursor: pointer;
+            border-bottom: 1px solid #2D9CDB;
+        }
+
+        span.active{
+            border: 0;
+            color: #22305F;
+        }
+    }
+
+    .oh_suop{
+        font-size: 14px;
+        color: #828282;
+    }
 }
 </style>
