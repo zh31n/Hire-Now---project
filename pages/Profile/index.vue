@@ -162,7 +162,7 @@
                             </div>
                             <div class="op_btn_gr">Сохранить личные данные</div>
                         </div>
-                        <div class="give_notifiactions">
+                        <div class="give_notifiactions" style="display: none;">
                             <div class="title">Получать уведомления:</div>
                             <div class="inps_or">
                                 <OrangeInput />
@@ -173,6 +173,145 @@
                                 Я хочу получать новости сайта
                             </div>
                             <div class="btn">Сохранить</div>
+                        </div>
+                        <div class="choose_category" style="display: none;">
+                            <div class="choose_category_title"></div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Курьерские услуги
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Ремонт и строительство
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Грузоперевозки
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Уборка и помощь по хозяйству
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Виртуальный помощник
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Компьютерная помощь
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Мероприятия и профмоакции
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Дизайн
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Разработка ПО
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Фото, видео и аудио
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Установка и ремонт техники
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Красота и здоровье
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Ремонт цифровой техники
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Юридическая и бухгалтерская помощь
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" alt="">
+                                    Репетиторы и обучение
+                                </div>
+                            </div>
+                            <div class="cc_item">
+                                <div class="cc_item_title">
+                                    <img src="../../assets/images/arr_d.svg" style="transform: rotate(180deg)" alt="">
+                                    Ремонт транспорта <span>[3]</span>
+                                </div>
+                                <div class="cc_btns">
+                                    <div class="cc_btn_all_cat">Выбрать все подкатегории</div>
+                                    <div class="cc_btns_line">
+                                        <div class="cc_btn">Автоэлектрика</div>
+                                        <div class="cc_btn active">Шиномонтаж</div>
+                                    </div>
+                                    <div class="cc_btns_line">
+                                        <div class="cc_btn active">Кузовный ремонт</div>
+                                        <div class="cc_btn active">Мотосервис</div>
+                                        <div class="cc_btn">Что-то другое</div>
+                                    </div>
+                                </div>
+                                <div class="title">Геопозиция. Москва и Новая Москва</div>
+                                <div class="pd_input">
+                                    <div>Имя</div>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="big_sq"></div>
+                                <div class="title">Типы уведомлений</div>
+                                <div class="sup">Уведомлять меня по:</div>
+                                <div class="or_inps">
+                                    <div class="inps_or">
+                                        <OrangeInput />
+                                        Email
+                                    </div>
+                                    <div class="inps_or">
+                                        <OrangeInput />
+                                        Push на телефон
+                                    </div>
+                                </div>
+                                <div class="title">Подборка рекомендованных заданий</div>
+                                <div class="sup">
+                                    Раз в день мы отправляем на электронный адрес подборку заданий, которые<br>
+                                    подходят именно вам.
+                                </div>
+                                <div class="inps_or" style="width: 100%;margin-bottom: 2rem;">
+                                    <OrangeInput />
+                                    Получать подборку рекомендованных заданий
+                                </div>
+                                <div class="btn">Сохранить</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -715,26 +854,26 @@ export default {
         color: #22305F;
         margin-bottom: 2rem;
     }
+}
 
-    .pd_input {
-        font-size: 14px;
-        color: #828282;
-        margin-bottom: 1rem;
+.pd_input {
+    font-size: 14px;
+    color: #828282;
+    margin-bottom: 1rem;
 
-        div {
-            padding-left: 0.5rem;
-        }
+    div {
+        padding-left: 0.5rem;
+    }
 
-        input {
-            width: 515px;
-            height: 40px;
-            background: #FFFFFF;
-            border: 1px solid #D9D9D9;
-            border-radius: 5px;
-            padding-left: 1rem;
-            outline: 0;
-            color: #22305F;
-        }
+    input {
+        width: 515px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 5px;
+        padding-left: 1rem;
+        outline: 0;
+        color: #22305F;
     }
 }
 
@@ -801,13 +940,7 @@ export default {
         margin-bottom: 2rem;
     }
 
-    .inps_or {
-        display: flex;
-        align-items: center;
-        width: 40%;
-        font-size: 16px;
-        margin-bottom: 1rem;
-    }
+
 
     .btn {
         display: flex;
@@ -822,5 +955,124 @@ export default {
         border-radius: 60px;
         margin-top: 2rem;
     }
+}
+
+.inps_or {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.cc_item {
+    margin-top: 1rem;
+}
+
+.cc_item_title {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+    span {
+        color: #FFA200;
+        margin-left: 0.5rem;
+    }
+
+    img {
+        margin-right: 1rem;
+    }
+}
+
+.cc_btns {
+
+    .cc_btn,
+    .cc_btn_all_cat {
+        width: 152px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid #828282;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #22305F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        line-height: normal;
+        margin-right: 1rem;
+    }
+
+    .cc_btn_all_cat {
+        width: 200px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .cc_btn.active,
+    .cc_btn_all_cat.active {
+        background-color: #FDEAC2;
+        border: 0;
+    }
+
+    .cc_btn:hover,
+    .cc_btn_all_cat:hover {
+        background-color: #FDEAC2;
+        border: 0;
+    }
+}
+
+.cc_btns_line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cc_item {
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #22305F;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .sup {
+        font-size: 14px;
+        color: #828282;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        width: 240px;
+        height: 55px;
+        background: #6FC727;
+        border-radius: 60px;
+        margin-top: 4rem;
+    }
+}
+
+.big_sq {
+    width: 722px;
+    height: 228px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.or_inps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #22305F;
+    width: 55%;
 }
 </style>
