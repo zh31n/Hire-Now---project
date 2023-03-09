@@ -162,6 +162,18 @@
                             </div>
                             <div class="op_btn_gr">Сохранить личные данные</div>
                         </div>
+                        <div class="give_notifiactions">
+                            <div class="title">Получать уведомления:</div>
+                            <div class="inps_or">
+                                <OrangeInput />
+                                Системные уведомления
+                            </div>
+                            <div class="inps_or">
+                                <OrangeInput />
+                                Я хочу получать новости сайта
+                            </div>
+                            <div class="btn">Сохранить</div>
+                        </div>
                     </div>
                 </div>
                 <div class="side_bar">
@@ -248,11 +260,13 @@
 <script>
 import FeedbackButtons from '../../components/FeedbackButtons.vue';
 import FeedBackItem from '../../components/FeedBackItem.vue';
+import OrangeInput from '../../components/OrangeInput.vue';
 
 export default {
     components: {
         FeedbackButtons,
-        FeedBackItem
+        FeedBackItem,
+        OrangeInput
     }
 }
 
@@ -740,7 +754,7 @@ export default {
     line-height: normal;
 }
 
-.pd_sex_i{
+.pd_sex_i {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -748,11 +762,11 @@ export default {
     font-size: 16px;
     color: #22305F;
 
-    .male{
+    .male {
         display: flex;
         align-items: center;
 
-        .oran{
+        .oran {
             height: 16px;
             width: 16px;
             border-radius: 10px;
@@ -761,13 +775,13 @@ export default {
             margin-right: 1rem;
         }
 
-        .oran.active{
+        .oran.active {
             border: 3px solid #FFA200;
         }
     }
 }
 
-.title_sex{
+.title_sex {
     font-size: 14px;
     color: #828282;
     font-weight: 400;
@@ -775,7 +789,38 @@ export default {
     padding-left: .5rem;
 }
 
-.pd_sex{
+.pd_sex {
     margin-bottom: 1rem;
+}
+
+.give_notifiactions {
+    .title {
+        font-size: 22px;
+        color: #22305F;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .inps_or {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        width: 240px;
+        height: 55px;
+        background: #6FC727;
+        border-radius: 60px;
+        margin-top: 2rem;
+    }
 }
 </style>
