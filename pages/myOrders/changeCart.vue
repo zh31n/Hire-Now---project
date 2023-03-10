@@ -324,6 +324,8 @@ export default {
             font-size: 16px;
             font-weight: 400;
             display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
 
             img {
                 margin-left: .3rem;
@@ -461,6 +463,12 @@ export default {
                 display: none;
             }
         }
+    }
+}
+
+@media (max-width:580px){
+    .btn_cancel{
+        width: 100% !important;
     }
 }
 </style>
