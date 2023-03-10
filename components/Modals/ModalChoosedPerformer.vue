@@ -32,6 +32,12 @@
 </template>
 
 <script>
+export default{
+    name:'ModalChoosedPerformer',
+    components:{
+
+    }
+}
 
 </script>
 
@@ -43,7 +49,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
+    z-index: 2000;
     transition: .3s all;
     display: flex;
     justify-content: center;
@@ -55,6 +61,7 @@
         background-color: white;
         border-radius: 20px;
         text-align: center;
+        overflow: auto;
 
         .close_img {
             display: flex;
@@ -138,5 +145,17 @@
         }
     }
 
+}
+
+@media (max-height:700px) {
+    .modalChP_i{
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+
+        .line{
+            width: 50% !important;
+        }
+    }
 }
 </style>

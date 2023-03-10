@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="exr_awards">
-                            Получил <span>7 наград</span>
+                            <div class="">Получил <span>7 наград</span></div>
                             <div class="arounds_awards">
                                 <div class="around_award" style="background:#2D9CDB ;"></div>
                                 <div class="around_award" style="background:#2F80ED ;"></div>
@@ -98,21 +98,24 @@
                                     <div class="type_work_i_title">Разработка ПО</div>
                                     <div class="type_work_i_line f">
                                         Создание лендингов
-                                        <span>(11-й в рейтинге из 131)</span>
+                                        <span class="m_in">(11-й в рейтинге из 131)</span>
                                         <div class="line"></div>
+                                        <span class="tire_"> - </span>
                                         19 заданий
                                     </div>
                                     <div class="type_work_i_line s ">
                                         Сайт под ключ
-                                        <span>(13-й в рейтинге из 366)</span>
+                                        <span class="m_in">(13-й в рейтинге из 366)</span>
                                         <span class="line"></span>
+                                        <span class="tire_"> - </span>
                                         150 заданий
                                     </div>
                                     <div class="type_work_i_line t">
                                         Что-то другое
-                                        <span>(21-й в рейтинге из 170)</span>
+                                        <span class="m_in">(21-й в рейтинге из 170)</span>
                                         <span class="line"></span>
-                                        3 заданий
+                                        <span class="tire_"> - </span>
+                                         3 заданий
                                     </div>
                                     <div class="check_more">Показать ещё подкатегории</div>
                                 </div>
@@ -145,8 +148,10 @@
                             </div>
                             <div class="feedback_filters">
                                 Отзывы
-                                <div class="fb_btn_filter active">От заказчиков</div>
-                                <div class="fb_btn_filter">От исполнителей</div>
+                                <div class="conn">
+                                    <div class="fb_btn_filter active">От заказчиков</div>
+                                    <div class="fb_btn_filter">От исполнителей</div>
+                                </div>
                             </div>
                             <FeedbackButtons />
                             <div class="feedback_items">
@@ -170,11 +175,11 @@
 import FeedbackButtons from '../../components/FeedbackButtons.vue';
 import FeedBackItem from '../../components/FeedBackItem.vue';
 
-export default{
-    components:{
-    FeedbackButtons,
-    FeedBackItem
-}
+export default {
+    components: {
+        FeedbackButtons,
+        FeedBackItem
+    }
 }
 
 
@@ -495,11 +500,19 @@ export default{
 
 .feedback_filters {
     display: flex;
-    align-items: center;
     font-size: 14px;
     color: #828282;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    gap: 10px;
+
+    .conn{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
 
 .fb_btn_filter {
@@ -510,9 +523,9 @@ export default{
     color: #22305F;
     font-size: 12px;
     font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     border-radius: 20px;
     margin-left: 1rem;
 }
@@ -523,10 +536,132 @@ export default{
 }
 
 
-.feedback_items{
+.feedback_items {
     margin-top: 4rem;
 }
 
+.tire_ {
+    display: none;
+}
+
+// Media
+
+@media (max-width:880px) {
+    .exr_info {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .exr_inform {
+            margin-left: 0;
+
+            .exr_age_city {
+                text-align: center;
+            }
+
+            .exr_name {
+                text-align: center;
+            }
+
+            .exr_since {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .exr_awards {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .exr_stats {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .examples_job {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+    .exr_veryfication {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .type_work {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .type_work {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .tire_ {
+        display: inline;
+    }
+
+    .type_work_i_line {
+        justify-content: flex-start;
+        // gap: 10px;
+    }
+
+    .exr_feedback .exr_feedback_up {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .exr_about_txt {
+        width: 100% !important;
+    }
+
+    .exr_about_txt::after {
+        width: 100% !important;
+    }
+
+    .exr_since{
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .m_in{
+        display: none;
+    }
+
+    .feedback_filters{
+        flex-direction: column;
+    }
+}
 
 
+@media (max-width:360px){
+    .avg_estimation{
+        flex-direction: column;
+        gap: 10px;
+
+        .stars{
+            margin-left: 0 !important;
+        }
+    }
+    .exr_info .status{
+        margin-left: 0;
+    }
+}
 </style>

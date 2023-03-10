@@ -433,7 +433,6 @@ export default {
 
 }
 
-.order_info {}
 
 // Media Queries
 

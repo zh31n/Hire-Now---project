@@ -39,7 +39,7 @@ export default {
     border-bottom: 1px solid #D9D9D9;
     margin-top: 1rem;
 
-    .fb_item_info{
+    .fb_item_info {
         font-size: 14px !important;
     }
 
@@ -87,5 +87,21 @@ export default {
     font-size: 14px;
     color: #828282;
     margin-top: 0.5rem;
+}
+
+
+@media (max-width:500px){
+    .fb_item {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .fb_data_stars{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }
 </style>

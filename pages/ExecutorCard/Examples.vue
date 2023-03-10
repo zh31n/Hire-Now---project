@@ -1,6 +1,6 @@
-<template>
+.exr_info .status[data-v-4e76279f]<template>
     <div class="exmpls">
-        <CreatedOfferTask />
+        <CreatedOfferTask style="display: none;" />
         <div class="container">
             <div class="examples">
                 <div class="examples_i">
@@ -57,6 +57,8 @@ export default {
     padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     .e_title {
         font-size: 28px;
@@ -126,6 +128,32 @@ export default {
         text-align: center;
         font-size: 16px;
         color: #6FC727;
+    }
+}
+
+@media (max-width:721px) {
+
+    .exapmle_blocks{
+        gap: 15px !important;
+        width: auto !important;
+        height: auto !important;
+        align-items: center !important;
+    }
+    .ex_block{
+        width: 240px !important;
+        height: 240px !important;
+    }
+}
+
+@media (max-width:500px){
+    .e_title{
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .e_sup{
+        font-size: 10px !important;
+        text-align: center;
     }
 }
 </style>

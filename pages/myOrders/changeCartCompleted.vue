@@ -1,6 +1,7 @@
 <template>
     <div class="changeCart">
         <div class="container">
+            <OrderNoComplete />
             <div class="changeCart_i">
                 <div class="r_side">
                     <div class="order_name">Hire Now дизайн</div>
@@ -113,7 +114,7 @@
                         <div class="btn_cancel">Создать еще раз</div>
                         <div class="feedbacks">
                             <div class="feedbacks_title">Отзывы</div>
-                            <FeedbackItem/>
+                            <FeedbackItem />
                         </div>
                     </div>
                 </div>
@@ -136,15 +137,17 @@
 </template>
 
 <script>
+import OrderNoComplete from '../../components/Modals/OrderNoComplete.vue';
 import FeedbackItem from '../../components/MyOrders/FeedbackItem.vue'
 import RespCard from '../../components/MyOrders/RespCard.vue'
 
 
 export default {
     components: {
-        FeedbackItem,
-        RespCard
-    }
+    FeedbackItem,
+    RespCard,
+    OrderNoComplete
+}
 }
 </script>
 
@@ -157,6 +160,8 @@ export default {
 .changeCart_i {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .categ_s {
@@ -389,9 +394,73 @@ export default {
 
 }
 
-.feedbacks_title{
-    font-weight: 700;   
+.feedbacks_title {
+    font-weight: 700;
     color: #22305F;
     padding-bottom: 2rem;
+}
+
+@media (max-width:700px) {
+
+    .rc_btn_choose {
+        display: flex;
+    }
+
+    .oi_title {
+        img {
+            display: none;
+        }
+    }
+
+    .r_side {
+        padding: 0 !important;
+        width: 95% !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        box-shadow: none !important;
+
+        .stat_order {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .warning_order_txt {
+            font-size: 12px !important;
+
+            br {
+                display: none;
+            }
+        }
+
+        .warning_order {
+            height: auto;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+
+        .rO_filters_btns {
+            width: auto;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .responses_order_title {
+            font-size: 11px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:580px) {
+
+    .btn_cancel,
+    .rc_btn_choose {
+        width: 100% !important;
+    }
 }
 </style>

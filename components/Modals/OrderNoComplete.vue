@@ -6,7 +6,9 @@
             </div>
             <div class="modalChP_inner">
                 <div class="modal_title">Задание не выполнено</div>
-                <div class="rating_guy">Пожалуйста, укажите причину, по которой задание не было выполнено:</div>
+                <div class="rating_guy">
+                    Пожалуйста, укажите причину, по которой задание не было выполнено:
+                </div>
                 <div class="choose_vars">
                     <div class="var">
                         <div class="inp_circle active"></div>
@@ -48,7 +50,9 @@
 </template>
 
 <script>
-
+export default {
+    name: 'OrderNoComplete'
+}
 </script>
 
 <style lang="scss" scoped>
@@ -68,9 +72,11 @@
     .modalChP_i {
         width: 700px;
         height: 700px;
+        // text-align: center !important;
         background-color: white;
         border-radius: 20px;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         .modalChP_inner {
             width: 525px;
@@ -124,7 +130,8 @@
             font-size: 28px;
             font-weight: 700;
             color: #22305F;
-            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .modal_btn {
@@ -220,5 +227,55 @@
     .inp_circle.active {
         border: 3px solid #FFA200;
     }
+}
+
+
+@media (max-height:700px) {
+    .modalChP_i {
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+
+        .line {
+            width: 50% !important;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .modal_title {
+        font-size: 22px !important;
+    }
+
+    .rating_guy {
+        display: none;
+    }
+
+    .choose_vars {
+
+
+        .var {
+            font-size: 12px !important;
+            margin-left: 5rem;
+        }
+
+        .inp_circle {
+            margin-right: 0.5rem !important;
+        }
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .var {
+        font-size: 12px !important;
+        margin-left: 0rem !important;
+    }
+
+    .modal_title {
+        padding-left: 2rem;
+    }
+
 }
 </style>

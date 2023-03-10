@@ -21,6 +21,9 @@
 </template>
 
 <script>
+export default {
+    name: 'ModalChoosePerformer'
+}
 
 </script>
 
@@ -32,11 +35,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
+    z-index: 2000;
     transition: .3s all;
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: all !important;
 
     .modalChP_i {
         height: 700px;
@@ -44,6 +48,7 @@
         background-color: white;
         border-radius: 20px;
         text-align: center;
+        overflow: auto !important;
 
         .close_img {
             display: flex;
@@ -127,22 +132,23 @@
         }
     }
 
-    .modal_info{
+    .modal_info {
         display: flex;
         align-items: center;
         flex-direction: column;
-        img{
+
+        img {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
 
-        .name{
+        .name {
             font-size: 22px;
             font-weight: 700;
             color: #2D9CDB;
         }
 
-        .tele{
+        .tele {
             font-size: 16px;
             font-weight: 400;
             color: #828282;
@@ -150,5 +156,17 @@
         }
     }
 
+}
+
+@media (max-height:700px) {
+    .modalChP_i {
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+
+        .line {
+            width: 50% !important;
+        }
+    }
 }
 </style>

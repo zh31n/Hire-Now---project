@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <OrderInProgress style="display: none;" />
+        <ModalChoosePerformer style="display: ;" />
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
@@ -70,12 +70,16 @@
 <script>
 import PanelInformation from '../../components/MyOrders/PanelInformation.vue';
 import OrderInProgress from '../../components/Modals/OrderInProgress.vue'
+import ModalChoosedPerformer from '../../components/Modals/ModalChoosedPerformer.vue';
+import ModalChoosePerformer from '../../components/Modals/ModalChoosePerformer.vue';
 
 export default {
     components: {
-        PanelInformation,
-        OrderInProgress
-    }
+    PanelInformation,
+    OrderInProgress,
+    ModalChoosedPerformer,
+    ModalChoosePerformer
+}
 }
 </script>
 

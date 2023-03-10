@@ -1,6 +1,6 @@
 <template>
     <div class="changeCart">
-        <OrderNoComplete />
+        <OrderNoComplete style="display: none;" />
         <div class="container">
             <div class="changeCart_i">
                 <div class="r_side">
@@ -110,9 +110,36 @@
                                     Не указано
                                 </div>
                             </div>
+                            <div class="oi_title">
+                                Фотография
+                                <div class="">
+                                    Не указано
+                                </div>
+                            </div>
+                            <div class="oi_title">
+                                Предоставить документы
+                                <div class="">
+                                    Не указано
+
+                                </div>
+                            </div>
+                            <div class="oi_title">
+                                Получить и передать деньги за товар после доставки
+                                <div class="">
+                                    Не указано
+
+                                </div>
+                            </div>
+                            <div class="oi_title">
+                                Какой бюджет?
+                                <div class="">
+                                    Не указано
+
+                                </div>
+                            </div>
                         </div>
                         <div class="btn_cancel">Задание выполнено</div>
-                        <div class="btn_cancel">Задание выполнено</div>
+                        <div class="btn_cancel">Задание не выполнено</div>
                     </div>
                 </div>
                 <div class="side_bar">
@@ -155,6 +182,8 @@ export default {
 .changeCart_i {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .categ_s {
@@ -317,7 +346,7 @@ export default {
     margin-left: auto;
 }
 
-.btn_cancel:last-child{
+.btn_cancel:last-child {
     background-color: white;
     border: 2px solid red;
     color: red;
@@ -391,5 +420,69 @@ export default {
     }
 
 
+}
+
+@media (max-width:700px) {
+
+    .rc_btn_choose {
+        display: flex;
+    }
+
+    .oi_title {
+        img {
+            display: none;
+        }
+    }
+
+    .r_side {
+        padding: 0 !important;
+        width: 95% !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        box-shadow: none !important;
+
+        .stat_order {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .warning_order_txt {
+            font-size: 12px !important;
+
+            br {
+                display: none;
+            }
+        }
+
+        .warning_order {
+            height: auto;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+
+        .rO_filters_btns {
+            width: auto;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .responses_order_title {
+            font-size: 11px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:580px) {
+
+    .btn_cancel,
+    .rc_btn_choose {
+        width: 100% !important;
+    }
 }
 </style>

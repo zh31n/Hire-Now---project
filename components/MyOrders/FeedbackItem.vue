@@ -190,14 +190,67 @@
         align-items: center;
         width: 30%;
         color: #828282;
-        
-        .hide{
+
+        .hide {
             // border-bottom: 1px solid #2D9CDB;
             text-decoration: underline;
             color: #2D9CDB;
             cursor: pointer;
         }
-        
+
     }
+}
+
+@media (max-width:580px) {
+
+    .response_card {
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    br {
+        display: none;
+    }
+
+    .rc_info {
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .rc_btns {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .rc_btn_write,
+        .rc_btn_choose {
+            margin: 0 !important;
+            width: 100% !important;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+    .rc_func {
+        display: flex;
+        justify-content: space-between;
+
+        .rc_funcs {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+            width: auto;
+        }
+    }
+
 }
 </style>

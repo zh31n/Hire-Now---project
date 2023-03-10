@@ -1,8 +1,10 @@
 <template>
     <div class="feedback_filters">
         Сначала показывать
-        <div class="fb_btn_filter active">Положительные (163)</div>
-        <div class="fb_btn_filter">Отрицательные (0)</div>
+        <div class="">
+            <div class="fb_btn_filter active">Положительные (163)</div>
+            <div class="fb_btn_filter">Отрицательные (0)</div>
+        </div>
     </div>
 </template>
 
@@ -23,6 +25,14 @@ export default {
     color: #828282;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    div{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 }
 
 .fb_btn_filter {
