@@ -74,7 +74,7 @@ export default {
         font-weight: 700;
         color: #22305F;
         text-align: center;
-        font-family: inherit;
+        // font-family: inherit;
     }
 
     .select {
@@ -104,13 +104,13 @@ export default {
         }
     }
 
-    .option{
+    .option {
         color: #22305F;
         border-radius: 10px;
         margin-top: 0.2rem;
     }
 
-    .option:hover{
+    .option:hover {
         background: orange;
         color: white;
     }
@@ -138,6 +138,56 @@ export default {
         font-weight: 700;
         margin-top: 6rem;
         cursor: pointer;
+    }
+}
+
+
+@media (max-height:700px) {
+    .modal_task_i {
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+    }
+
+    br {
+        display: none;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .modal_task_i {
+        .title {
+            font-size: 16px !important;
+        }
+
+    }
+
+    .modal_task .select {
+        width: 90%;
+
+        select {
+            width: 95%;
+        }
+
+        img {
+            left: 20rem;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .modal_task .select {
+        width: 90%;
+
+        select {
+            width: 95%;
+        }
+
+        img {
+            left: 16rem;
+        }
     }
 }
 </style>

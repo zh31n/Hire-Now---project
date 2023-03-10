@@ -45,6 +45,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2000;
 
     .modal_task_i {
         width: 700px;
@@ -136,6 +137,24 @@ export default {
         font-weight: 700;
         margin-top: 6rem;
         cursor: pointer;
+    }
+}
+
+@media (max-height:700px) {
+    .modal_task_i {
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+        overflow: auto;
+        overflow-x: hidden;
+
+        .title {
+            font-size: 18px !important;
+        }
+
+        .line {
+            width: 50% !important;
+        }
     }
 }
 </style>

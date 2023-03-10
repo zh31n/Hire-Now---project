@@ -43,6 +43,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2000;
 
     .modal_task_i {
         width: 700px;
@@ -134,6 +135,55 @@ export default {
         font-weight: 700;
         margin-top: 6rem;
         cursor: pointer;
+    }
+}
+
+@media (max-height:700px) {
+    .modal_task_i {
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+    }
+
+    br {
+        display: none;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .modal_task_i {
+        .title {
+            font-size: 16px !important;
+        }
+
+    }
+
+    .modal_task .select {
+        width: 90%;
+
+        select {
+            width: 95%;
+        }
+
+        img {
+            left: 20rem;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .modal_task .select {
+        width: 90%;
+
+        select {
+            width: 95%;
+        }
+
+        img {
+            left: 16rem;
+        }
     }
 }
 </style>

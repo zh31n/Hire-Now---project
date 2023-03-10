@@ -1,7 +1,6 @@
 <template>
   <div class="header">
-    <Notifications style="display: none;" />
-    <ModalMessages style="display: none;" />
+    <ModalMessages style="display: ;" />
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">
@@ -21,7 +20,10 @@
         <div class="icons_h">
           <img src="../assets/images/Язык.svg" alt="">
           <img src="../assets/images/Сообщения.svg" alt="">
-          <img src="../assets/images/bell.svg" alt="">
+          <div class="dropD">
+            <img src="../assets/images/bell.svg" style="position: relative;z-index: -1;" alt="">
+            <Notifications style="display: none;"/>
+          </div>
           <NuxtLink class="i_pr" to="/Profile">
             <img src="../assets/images/Аватар.svg" alt="">
           </NuxtLink>
@@ -42,12 +44,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.dropD{
+  display: inline-block;
+  position: relative;
+}
 .header {
+  position: fixed !important;
   background-color: white;
   width: 100%;
   border-bottom: 1px solid #F0F0F0;
   height: 60px;
-  position: relative !important;
+  // position: relative !important;
   z-index: 1000 !important;
 }
 

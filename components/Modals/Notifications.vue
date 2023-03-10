@@ -79,8 +79,8 @@ export default {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     position: absolute;
-    top: 3.8rem;
-    right: 26rem;
+    top:100%;
+    right: 10%;
     z-index: 1;
 
     .title {
@@ -144,5 +144,13 @@ export default {
     span{
         cursor: pointer;
     }
+}
+
+@media (max-width:381px) {
+    .notifications{
+        right: 0;
+        width: 100%;
+    }
+    
 }
 </style>

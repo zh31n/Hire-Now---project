@@ -5,7 +5,7 @@
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
             </div>
             <div class="modal_messages_inner">
-                <div class="dialogs">
+                <div class="dialogs" style="display: none;">
                     <div class="input_d">
                         <input type="text" name="" id="" placeholder="Введите имя для общения">
                     </div>
@@ -43,7 +43,7 @@
                         <div class="bl_o">2</div>
                     </div>
                 </div>
-                <div class="messanger">
+                <div class="messanger" style="display: ;">
                     <div class="messanger_empty" style="display: none;">
                         <img src="../../assets/images/Modal/big_msg.svg" alt="">
                         <div class="messanger_empty_title">Выберите, кому хотели бы написать</div>
@@ -56,7 +56,7 @@
                         </div>
                         <img class="muted" src="../../assets/images/Modal/muted.svg" alt="">
                     </div>
-                    <div class="msg_messanger">
+                    <div class="msg_messanger" >
                         <div class="name_date_guy">
                             <div class="name">Владислав Support Y.</div>
                             <div class="date">02.02.23, 08:04</div>
@@ -124,8 +124,8 @@ export default {
 
 .modal_messages {
     position: fixed;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, .3);
@@ -133,6 +133,7 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    // z-index: -10;
 
     .modal_messages_i {
         width: 1100px;
@@ -160,8 +161,8 @@ export default {
         margin-bottom: 1rem;
 
         input {
-            width: 315px;
-            height: 40px;
+            width: 100%;
+            height: 100%;
             border: 0;
             outline: 0;
             padding-left: 1rem;
@@ -180,7 +181,7 @@ export default {
     background-color: #D9D9D9;
 
     .trash {
-        margin-left: 9.5rem;
+        margin-left: 40%;
         display: block;
         cursor: pointer;
     }
@@ -191,7 +192,7 @@ export default {
     transition: all .3s;
 
     .trash {
-        margin-left: 9.5rem;
+        margin-left: 40%;
         display: block;
     }
 
@@ -217,7 +218,7 @@ export default {
     }
 
     .trash {
-        margin-left: 9.5rem;
+        margin-left: 40%;
         display: none;
     }
 
@@ -259,7 +260,7 @@ export default {
 }
 
 .bl_o {
-    margin-left: 9rem;
+    margin-left: 40%;
     background-color: orange;
     display: flex;
     justify-content: center;
@@ -366,4 +367,114 @@ export default {
         color: #2D9CDB;
     }
 }
+
+@media (max-width: 1161px) {
+    .modal_messages_i {
+        width: auto !important;
+    }
+
+    .msg_input_send_inp {
+        width: 80% !important;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .modal_messages_i {
+        width: 700px !important;
+        // height: auto !important;
+
+        .msg_people,
+        .msg_messanger {
+            padding-left: 1rem;
+        }
+    }
+
+
+}
+
+@media (max-width: 750px) {
+    .input_d {
+        width: 250px !important;
+    }
+
+    .bl_o {
+        margin-left: 20%;
+    }
+
+    .trash {
+        margin-left: 24% !important;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .msg_people{
+        border-bottom: 1px solid #828282;
+        border-top: 1px solid #828282;
+    }
+
+    .modal_messages {
+        background: none !important;
+
+    }
+
+    .modal_messages_i {
+        margin-top: 10% !important;
+        // padding-top: 30%;
+        width: 100vw !important;
+        height: 94.3vh !important;
+    }
+
+    .dialogs {
+        width: 95%;
+        height: 90vh;
+        border: none !important;
+    }
+
+    .messanger {
+        width: 95%;
+    }
+
+    .name_date_guy{
+        width: 100% !important;
+    }
+}
+@media (max-height: 897px){
+    .msg_messanger{
+        height: 75vh;
+    }
+}
+
+@media (max-height: 750px){
+    .modal_messages_i{
+        margin-top: 5rem !important;
+    }
+    
+    .msg_messanger{
+        height: 70vh;
+    }
+}
+
+@media (max-height: 741px){
+    .msg_messanger{
+        height: 70vh !important;
+    }
+}
+
+@media (max-height: 668px){
+    .msg_messanger{
+        height: 65vh !important;
+    }
+}
+
+@media (max-height: 480px){
+    .msg_messanger{
+        height: 55vh;
+    }
+}
+
+
+
+
 </style>

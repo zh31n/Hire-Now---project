@@ -1,6 +1,5 @@
-.exr_info .status[data-v-4e76279f]<template>
+<template>
     <div class="exmpls">
-        <CreatedOfferTask style="display: none;" />
         <div class="container">
             <div class="examples">
                 <div class="examples_i">
@@ -41,12 +40,16 @@
 
 <script>
 import CreatedOfferTask from '../../components/Modals/CreatedOfferTask.vue';
+import Notifications from '../../components/Modals/Notifications.vue';
+import OfferTask from '../../components/Modals/OfferTask.vue';
 
 
 export default {
     components: {
-        CreatedOfferTask
-    }
+    CreatedOfferTask,
+    OfferTask,
+    Notifications
+}
 }
 
 </script>
