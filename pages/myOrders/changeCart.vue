@@ -26,7 +26,7 @@
                             <div class="count_otclick">5</div>
                         </div>
                     </div>
-                    <div class="responses_order">
+                    <div class="responses_order" style="display:  none;">
                         <div class="warning_order">
                             <img src="../../assets/images/orderCart/warning.svg" alt="">
                             <span class="warning_order_txt">
@@ -51,7 +51,7 @@
                             <RespCard />
                         </div>
                     </div>
-                    <div class="details_order" style="display: none;">
+                    <div class="details_order" style="display: ;">
                         <div class="order_info">
                             <div class="oi_title">
                                 Номер задания
@@ -147,6 +147,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="rc_btn_choose">Редактировать задание</div>
                         <div class="btn_cancel">Отменить</div>
                     </div>
                 </div>
@@ -335,13 +336,13 @@ export default {
     }
 }
 
-.btn_cancel {
+.btn_cancel,
+.rc_btn_choose {
     width: 540px;
     height: 50px;
     background: #FFFFFF;
     border: 2px solid #D9D9D9;
     border-radius: 60px;
-    margin-top: 3rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -350,6 +351,16 @@ export default {
     font-size: 16px;
     color: #22305F;
     cursor: pointer;
+}
+
+.rc_btn_choose {
+    background: #6FC727;
+    border-radius: 60px;
+    border: 0;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    display: none;
 }
 
 .warning_order {
@@ -422,9 +433,21 @@ export default {
 
 }
 
+.order_info {}
+
 // Media Queries
 
 @media (max-width:700px) {
+
+    .rc_btn_choose{
+        display: flex;
+    }
+
+    .oi_title{
+        img{
+            display: none;
+        }
+    }
     .r_side {
         padding: 0 !important;
         width: 95% !important;
@@ -432,42 +455,45 @@ export default {
         margin-left: auto !important;
         box-shadow: none !important;
 
-        .stat_order{
+        .stat_order {
             flex-wrap: wrap;
             gap: 10px;
         }
 
-        .warning_order_txt{
+        .warning_order_txt {
             font-size: 12px !important;
 
-            br{
+            br {
                 display: none;
             }
         }
-        .warning_order{
+
+        .warning_order {
             height: auto;
-            img{
+
+            img {
                 margin-right: 1rem;
             }
         }
 
-        .rO_filters_btns{
+        .rO_filters_btns {
             width: auto;
             flex-wrap: wrap;
             gap: 10px;
         }
 
-        .responses_order_title{
+        .responses_order_title {
             font-size: 11px;
-            br{
+
+            br {
                 display: none;
             }
         }
     }
 }
 
-@media (max-width:580px){
-    .btn_cancel{
+@media (max-width:580px) {
+    .btn_cancel,.rc_btn_choose {
         width: 100% !important;
     }
 }
