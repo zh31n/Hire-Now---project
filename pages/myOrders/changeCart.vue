@@ -5,7 +5,7 @@
                 <div class="r_side">
                     <div class="order_name">Hire Now дизайн</div>
                     <div class="o_price">до 6 000 руб.</div>
-                    <span class="stat_order">
+                    <div class="stat_order">
                         <span class="time_create">
                             Открыто.
                             <span>Создано 2 февраля 2023 г.</span>
@@ -18,7 +18,7 @@
                             <img src="../../assets/images/orderCart/hand.svg" alt="">
                             Поделиться заданием
                         </span>
-                    </span>
+                    </div>
                     <div class="btns_func">
                         <div class="btn_f ">Детали задания</div>
                         <div class="btn_f active">
@@ -187,6 +187,8 @@ export default {
 .changeCart_i {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .categ_s {
@@ -382,7 +384,8 @@ export default {
 
 .rO_filters_btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 1rem;
     align-items: center;
     width: 80%;
     transition: all .3s;
@@ -417,4 +420,47 @@ export default {
 
 }
 
+// Media Queries
+
+@media (max-width:700px) {
+    .r_side {
+        padding: 0 !important;
+        width: 95% !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        box-shadow: none !important;
+
+        .stat_order{
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .warning_order_txt{
+            font-size: 12px !important;
+
+            br{
+                display: none;
+            }
+        }
+        .warning_order{
+            height: auto;
+            img{
+                margin-right: 1rem;
+            }
+        }
+
+        .rO_filters_btns{
+            width: auto;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .responses_order_title{
+            font-size: 11px;
+            br{
+                display: none;
+            }
+        }
+    }
+}
 </style>

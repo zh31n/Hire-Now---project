@@ -29,7 +29,7 @@
                 или лучше звоните, чтобы обсудить детали задания, и уже точно<br>
                 доверить его мне и моему сотруднику. Спасибо
             </div>
-            <div class="ppl_tel">Телефон исполнителя: +7 999 666-62-22</div>
+            <div class="ppl_tel">Телефон исполнителя: <span>+7 999 666-62-22</span></div>
             <div class="rc_btns">
                 <div class="rc_btn_write">Написать в чат</div>
                 <div class="rc_btn_choose">Выбрать исполнителем</div>
@@ -48,14 +48,19 @@
     </div>
 </template>
 
-<script></script>
+<script>
+export default {
+    name: 'RespCard'
+}
+</script>
 
 <style lang="scss" scoped>
-
-.response_card{
+.response_card {
     margin-top: 2rem;
     margin-bottom: 3rem;
+    width: 540px;
 }
+
 .rc_ppl {
     display: flex;
     justify-content: flex-start;
@@ -135,6 +140,10 @@
         font-weight: 700;
         font-size: 14px;
         color: #22305F;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
     .rc_btns {
@@ -180,7 +189,6 @@
     color: #828282;
     display: flex;
     justify-content: space-between;
-    width: 95%;
     margin-top: .5rem;
 
     .rc_funcs {
@@ -192,6 +200,55 @@
         span {
             border-bottom: 1px solid #828282;
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:580px) {
+
+    .response_card {
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    br {
+        display: none;
+    }
+
+    .rc_info {
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .rc_btns {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .rc_btn_write,
+        .rc_btn_choose {
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+
+    .rc_func {
+        display: flex;
+        justify-content: space-between;
+
+        .rc_funcs {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+            width: auto;
         }
     }
 }
