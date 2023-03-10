@@ -88,7 +88,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   width: 100%;
-  height: 290px;
+  // height: 290px;
   background-color: #FAFAFF;
 
   .f_nav {
@@ -159,6 +159,59 @@ export default {
       fill: #FFA200;
       transition: all .5s;
     }
+  }
+}
+
+@media (max-width:1024px) {
+  .down {
+    width: 54% !important;
+  }
+}
+
+
+@media (max-width:768px) {
+  .f_up {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f_nav {
+    width: 90% !important;
+    margin-bottom: 2rem;
+
+  }
+
+  .down {
+    width: auto !important;
+    min-width: 95%;
+    max-width: 70%;
+  }
+
+  .f_down {
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    .social_f {
+      width: 35%;
+    }
+  }
+}
+
+@media (max-width:460px) {
+  .down {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 4px;
+  }
+
+  .footer .f_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 22px;
+
   }
 }
 </style>

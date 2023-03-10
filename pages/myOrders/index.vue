@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <OrderInProgress style="display: none;"/>
+        <OrderInProgress style="display: none;" />
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
@@ -126,9 +126,11 @@ export default {
 
 .order_info {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 48%;
+
+    img {
+        margin-right: 3rem;
+    }
 
     .order_info_i {
         display: flex;
@@ -153,5 +155,89 @@ export default {
         }
     }
 
+}
+
+@media (max-width: 1024px) {
+    .side_bar {
+        display: none;
+    }
+
+    .myOrders_i {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .orderCart {
+        min-width: 560px;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .orderCart {
+        min-width: 300px;
+        justify-content: baseline;
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 1rem;
+
+        .order_price {
+            padding-left: 5rem !important;
+        }
+    }
+}
+
+
+@media (max-width: 389px) {
+    .orderCart {
+        max-height: 128px;
+        padding: 0.5rem 1.5rem;
+
+        .order_price {
+            padding-left: 4rem !important;
+        }
+    }
+
+    .order_price,
+    .order_info_title {
+        font-size: 14px !important;
+    }
+
+    .order_location {
+        font-size: 10px !important;
+    }
+
+    .o_status {
+        font-size: 12px !important;
+    }
+
+    .order_info img {
+        margin-right: 2rem;
+    }
+
+    .order_info .order_info_i {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 320px){
+    .orderCart {
+        min-width: auto !important;
+        width: 280px !important;
+        padding: 0.5rem !important;
+        margin-right: auto;
+        margin-left: auto;
+
+        .order_price {
+            padding-left: 4rem !important;
+        }
+    }
 }
 </style>
