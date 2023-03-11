@@ -90,26 +90,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="feedback">
-                                <div class="title">Отзывы</div>
-                                <FeedbackButtons style="margin-bottom: 2rem;" />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                                <FeedBackItem />
-                            </div>
+                        </div>
+                        <div class="feedback" style="display: ;">
+                            <div class="title">Отзывы</div>
+                            <FeedbackButtons style="margin-bottom: 2rem;" />
+                            <FeedBackItem />
+                            <FeedBackItem />
+                            <FeedBackItem />
+                            <FeedBackItem />
+                            <FeedBackItem />
+                            <FeedBackItem />
+                            <FeedBackItem />
+                            <FeedBackItem />
                         </div>
                     </div>
                     <div class="profile_score" style="display: none;">
                         <div class="balance">Ваш баланс <span>0</span> ₽</div>
                         <div class="replenish_balance">
-                            Пополнить счет на
-                            <input class="replBal_inp">
-                            ₽
+                            <div class="replenish_balance_i">
+                                Пополнить счет на
+                                <input class="replBal_inp">
+                                ₽
+                            </div>
                             <div class="replBal_btn">Пополнить счет</div>
                         </div>
                         <div class="opration_history">
@@ -122,7 +124,7 @@
                             <div class="oh_suop">За данный период транзакций не было</div>
                         </div>
                     </div>
-                    <div class="options_tab">
+                    <div class="options_tab" style="display: ;">
                         <div class="op_btns">
                             <div class="op_btn active">Общие настройки</div>
                             <div class="op_btn">Уведомления</div>
@@ -313,7 +315,7 @@
                                 <div class="btn">Сохранить</div>
                             </div>
                         </div>
-                        <div class="security">
+                        <div class="security" style="display: ;">
                             <div class="title">Изменить пароль</div>
                             <div class="sup">Придумайте новый пароль с такими требованиями:</div>
                             <ul>
@@ -437,12 +439,14 @@ export default {
 
 <style scoped lang="scss">
 .profile {
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
 
     .profile_i {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
 
         .profile_inner {
             // max-width: 720px;
@@ -763,6 +767,12 @@ export default {
         color: #22305F;
         margin-top: 1rem;
 
+        .replenish_balance_i{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         .replBal_inp {
             width: 135px;
             height: 45px;
@@ -771,8 +781,6 @@ export default {
             border-radius: 5px;
             outline: 0;
             padding-left: 0.5rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
         }
 
         .replBal_btn {
@@ -1148,6 +1156,137 @@ export default {
         img {
             margin-right: 0.4rem;
         }
+    }
+}
+
+@media (max-width:1045px) {
+    .profile_i {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+
+    }
+
+    .profile_inner {
+        height: auto !important;
+        margin-bottom: 2rem;
+    }
+
+    .block_specifications {
+        width: 300px !important;
+        height: auto !important;
+
+        .block_specifications_i {
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+        }
+    }
+
+    .p_greeting_stat {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .op_btns{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width:731px) {
+    .p_greeting_stat {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .profile_inner {
+        width: auto !important;
+    }
+
+    .profile_info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+
+        .profile_info_txt {
+            margin-left: 0 !important;
+        }
+    }
+
+    .profile_tab {
+        width: 100%;
+    }
+
+    .big_sq{
+        width: 100% !important;
+    }
+
+
+
+}
+
+@media (max-width:660px) {
+
+    .p_greeting{
+        font-size: 22px !important; 
+    }
+    .opration_history {
+        width: 100% !important;
+    }
+
+    .oh_filter {
+        flex-direction: column;
+        gap: 10px;
+        width: 100% !important;
+        align-items: flex-start !important;
+    }
+
+    .oh_suop {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .replenish_balance {
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .pd_input input{
+        width: 100%;
+    }
+
+    .pd_sex_i{
+        width: 100%;
+    }
+
+    .op_btn_gr{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .inps_or{
+        width: 100%;
+        font-size: 13px !important;
+    }
+
+    .give_notifiactions .btn{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .or_inps{
+        width: 100% !important;
+    }
+
+    .cc_btns_line{
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 </style>

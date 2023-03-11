@@ -90,14 +90,14 @@ export default {
 }
 
 
-@media (max-width:500px){
+@media (max-width:700px) {
     .fb_item {
         flex-direction: column;
         gap: 10px;
         width: 100%;
     }
 
-    .fb_data_stars{
+    .fb_data_stars {
         display: flex;
         justify-content: space-between;
         align-items: center;
