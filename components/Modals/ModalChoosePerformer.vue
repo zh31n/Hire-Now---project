@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="modalChP">
+    <div v-if="isShow" @click="isShow = false" class="modalChP">
         <div class="modalChP_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -22,11 +22,13 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: 'ModalChoosePerformer',
+    components: {},
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -170,6 +172,75 @@ export default {
         .line {
             width: 50% !important;
         }
+    }
+}
+
+@media (max-width:321px) {
+    .modal_title {
+        font-size: 22px !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .modal_price {
+        margin-top: 2rem !important;
+        font-size: 12px !important;
+
+        .line {
+            width: 169px;
+            margin-top: 15px !important;
+        }
+    }
+
+    .modal_sup {
+        font-size: 12px !important;
+        text-align: center;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+        br {
+            display: none !important;
+        }
+    }
+
+    .modal_warning {
+        font-size: 10px !important;
+        width: auto !important;
+        gap: 10px !important;
+
+        span {
+            width: 210px;
+        }
+
+        img {
+            margin: 0 !important;
+        }
+
+        
+    }
+
+    .modal_warnings {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0 !important;
+    }
+
+    .modal_btn {
+        width: 261px !important;
+        height: 35px !important;
+        background: #6FC727;
+        border-radius: 60px;
+        font-size: 14px !important;
+        margin-top: 4rem !important;
+    }
+
+    .tele{
+        margin: 0 !important;
     }
 }
 </style>

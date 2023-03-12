@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="modalChP">
+    <div v-if="isShow" @click="isShow = false" class="modalChP">
         <div class="modalChP_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -17,13 +17,18 @@
             <div class="modal_warnings">
                 <div class="modal_warning">
                     <img src="../../assets/images/Modal/warning.svg" alt="">
-                    Не совершайте предоплату без оформления<br>
-                    договора или расписки
+                    <span>
+                        Не совершайте предоплату без оформления<br>
+                        договора или расписки
+                    </span>
+
                 </div>
                 <div class="modal_warning">
                     <img src="../../assets/images/Modal/warning.svg" alt="">
-                    Если доверяете исполнителю ценности или пускаете в дом,<br>
-                    зафиксируйте его паспортные данные
+                    <span>
+                        Если доверяете исполнителю ценности или пускаете в дом,<br>
+                        зафиксируйте его паспортные данные
+                    </span>
                 </div>
             </div>
             <div class="modal_btn">Выбрать исполнителя</div>
@@ -33,11 +38,12 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: "ModalChoosedPerformer",
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -148,14 +154,79 @@ export default {
 }
 
 @media (max-height:700px) {
-    .modalChP_i{
+    .modalChP_i {
         height: 100vh !important;
         width: 100vw !important;
         border-radius: 0 !important;
 
-        .line{
+        .line {
             width: 50% !important;
         }
+    }
+}
+
+@media (max-width:321px) {
+    .modal_title {
+        font-size: 22px !important;
+    }
+
+    .modal_price {
+        margin-top: 2rem !important;
+        font-size: 12px !important;
+
+        .line {
+            width: 169px;
+            margin-top: 15px !important;
+        }
+    }
+
+    .modal_sup {
+        font-size: 12px !important;
+        text-align: center;
+        width: 274px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem !important;
+
+        br {
+            display: none !important;
+        }
+    }
+
+    .modal_warning {
+        font-size: 10px !important;
+        width: auto !important;
+        gap: 10px !important;
+
+        span {
+            width: 210px;
+        }
+
+        img {
+            margin: 0 !important;
+        }
+
+        br {
+            display: none;
+        }
+    }
+
+    .modal_warnings {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0 !important;
+    }
+
+    .modal_btn {
+        width: 261px !important;
+        height: 35px !important;
+        background: #6FC727;
+        border-radius: 60px;
+        font-size: 14px !important;
     }
 }
 </style>

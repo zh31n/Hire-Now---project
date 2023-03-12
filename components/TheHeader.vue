@@ -1,7 +1,8 @@
 <template>
   <div class="header">
-    <ModalMessages/>
-    <Notifications/>
+    <ModalMessages style="display: none;"/>
+    <Notifications style="display: none;"/>
+    <ModalChoosePerformer />
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">
@@ -36,11 +37,13 @@
 
 <script>
 import ModalMessages from './Modals/ModalMessages.vue';
+import ModalChoosePerformer from './Modals/ModalChoosePerformer.vue';
 import Notifications from './Modals/Notifications.vue';
 
 
+
 export default {
-  components: { Notifications, ModalMessages }
+  components: { Notifications, ModalMessages,ModalChoosePerformer}
 }
 </script>
 
