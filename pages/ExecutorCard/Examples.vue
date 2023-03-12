@@ -1,7 +1,10 @@
 <template>
     <div class="exmpls">
         <div class="container">
-            <div class="examples">
+          <CreatedOfferTask/>
+          <Notifications/>
+          <OfferTask/>
+          <div class="examples">
                 <div class="examples_i">
                     <div class="btn_back">
                         <img src="../../assets/images/Arrow.svg" alt="arrow">
@@ -131,6 +134,7 @@ export default {
         text-align: center;
         font-size: 16px;
         color: #6FC727;
+        margin-top: 5px;
     }
 }
 

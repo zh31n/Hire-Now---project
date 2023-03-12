@@ -1,5 +1,5 @@
 <template>
-    <div class="modal_task">
+    <div v-if="isShow" @click="isShow=false" class="modal_task">
         <div class="modal_task_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -30,10 +30,11 @@
 
 <script >
 export default {
-    name: 'OfferTask',
-    components: {
-
+  data(){
+    return {
+      isShow: true,
     }
+  }
 }
 </script>
 

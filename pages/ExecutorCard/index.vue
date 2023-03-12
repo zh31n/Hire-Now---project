@@ -1,5 +1,5 @@
 <template>
-    <div class="executor_card">
+    <div class="executor_card" style="    top: 34px;position: relative;">
         <div class="container">
             <div class="executor_card_i">
                 <div class="exr_info">
@@ -115,7 +115,7 @@
                                         <span class="m_in">(21-й в рейтинге из 170)</span>
                                         <span class="line"></span>
                                         <span class="tire_"> - </span>
-                                         3 заданий
+                                        3 заданий
                                     </div>
                                     <div class="check_more">Показать ещё подкатегории</div>
                                 </div>
@@ -163,7 +163,7 @@
                                 <FeedBackItem />
                             </div>
                         </div>
-                        <div class="btn_all_about" style="bottom: 0;margin-top: 3rem;">Показать еще</div>
+                        <div class="btn_all_about" style="bottom: 0;margin-top: 3rem;">Показать ещё</div>
                     </div>
                 </div>
             </div>
@@ -193,6 +193,7 @@ export default {
     font-weight: 500;
     color: #22305F;
     display: flex;
+    margin-bottom: 2rem;
 
     .exr_inform {
         margin-left: 2rem;
@@ -338,7 +339,7 @@ export default {
     }
 }
 
-.btn_all_about {
+.exr_about .btn_all_about {
     width: 275px;
     height: 55px;
     background: #FFFFFF;
@@ -351,6 +352,22 @@ export default {
     color: #22305F;
     position: relative;
     bottom: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.btn_all_about {
+    width: 220px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 60px;
+    color: #22305F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
@@ -505,8 +522,9 @@ export default {
     margin-top: 2rem;
     margin-bottom: 1rem;
     gap: 10px;
+    align-items: center;
 
-    .conn{
+    .conn {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -527,7 +545,6 @@ export default {
     justify-content: center !important;
     align-items: center !important;
     border-radius: 20px;
-    margin-left: 1rem;
 }
 
 .fb_btn_filter.active {
@@ -635,32 +652,33 @@ export default {
         width: 100% !important;
     }
 
-    .exr_since{
+    .exr_since {
         flex-wrap: wrap;
         gap: 10px;
         align-items: center;
     }
 
-    .m_in{
+    .m_in {
         display: none;
     }
 
-    .feedback_filters{
+    .feedback_filters {
         flex-direction: column;
     }
 }
 
 
-@media (max-width:360px){
-    .avg_estimation{
+@media (max-width:360px) {
+    .avg_estimation {
         flex-direction: column;
         gap: 10px;
 
-        .stars{
+        .stars {
             margin-left: 0 !important;
         }
     }
-    .exr_info .status{
+
+    .exr_info .status {
         margin-left: 0;
     }
 }

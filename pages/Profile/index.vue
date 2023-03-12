@@ -42,7 +42,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="profile_about_me" style="display: none;">
+                    <div class="profile_about_me" >
                         <div class="little_about_me">
                             Немного о себе
                             <div>
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feedback" style="display: ;">
+                        <div class="feedback">
                             <div class="title">Отзывы</div>
                             <FeedbackButtons style="margin-bottom: 2rem;" />
                             <FeedBackItem />
@@ -104,7 +104,7 @@
                             <FeedBackItem />
                         </div>
                     </div>
-                    <div class="profile_score" style="display: none;">
+                    <div class="profile_score" >
                         <div class="balance">Ваш баланс <span>0</span> ₽</div>
                         <div class="replenish_balance">
                             <div class="replenish_balance_i">
@@ -119,19 +119,19 @@
                             <div class="oh_filter">
                                 <span class="active">Все операции</span>
                                 <span>Пополнения счета</span>
-                                <span>Списавния со счета</span>
+                                <span>Списания со счета</span>
                             </div>
                             <div class="oh_suop">За данный период транзакций не было</div>
                         </div>
                     </div>
-                    <div class="options_tab" style="display: ;">
+                    <div class="options_tab">
                         <div class="op_btns">
                             <div class="op_btn active">Общие настройки</div>
                             <div class="op_btn">Уведомления</div>
                             <div class="op_btn">Подписка на задания</div>
                             <div class="op_btn">Безопасность</div>
                         </div>
-                        <div class="personal_data" style="display: none;">
+                        <div class="personal_data">
                             <div class="title">Личные данные</div>
                             <div class="pd_input">
                                 <div>Имя</div>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="op_btn_gr">Сохранить личные данные</div>
                         </div>
-                        <div class="give_notifiactions" style="display: none;">
+                        <div class="give_notifiactions">
                             <div class="title">Получать уведомления:</div>
                             <div class="inps_or">
                                 <OrangeInput />
@@ -176,7 +176,7 @@
                             </div>
                             <div class="btn">Сохранить</div>
                         </div>
-                        <div class="choose_category" style="display: none;">
+                        <div class="choose_category">
                             <div class="choose_category_title"></div>
                             <div class="cc_item">
                                 <div class="cc_item_title">
@@ -315,7 +315,7 @@
                                 <div class="btn">Сохранить</div>
                             </div>
                         </div>
-                        <div class="security" style="display: ;">
+                        <div class="security" >
                             <div class="title">Изменить пароль</div>
                             <div class="sup">Придумайте новый пароль с такими требованиями:</div>
                             <ul>
@@ -360,7 +360,7 @@
                             <span>Привязать</span>
                         </div>
                     </div>
-                    <div class="sb_txt">
+                     <div class="sb_txt">
                         Повысьте доверие пользователей к<br>
                         себе — привяжите ваши аккаунты<br>
                         социальных сетей к профилю<br>
@@ -810,7 +810,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    margin-bottom: 20px;
     .oh_title {
         font-size: 22px;
         color: #22305F;
@@ -993,7 +993,7 @@ export default {
     display: flex;
     align-items: center;
     width: 40%;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 1rem;
 }
 
@@ -1063,11 +1063,12 @@ export default {
 
 .cc_item {
     .title {
-        font-size: 22px;
+        font-size: 22px !important;
         font-weight: 700;
         color: #22305F;
         margin-top: 4rem;
         margin-bottom: 1rem;
+        font-family: inherit !important;
     }
 
     .sup {
@@ -1152,6 +1153,7 @@ export default {
         display: flex;
         align-items: center;
         font-size: 14px;
+        color: #22305F;
 
         img {
             margin-right: 0.4rem;
@@ -1232,7 +1234,7 @@ export default {
 @media (max-width:660px) {
 
     .p_greeting{
-        font-size: 22px !important; 
+        font-size: 22px !important;
     }
     .opration_history {
         width: 100% !important;

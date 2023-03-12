@@ -1,5 +1,5 @@
 <template>
-    <div class="response_card">
+    <div v-if="isShow" @click="isShow=false" class="response_card">
         <div class="rc_ppl">
             <div class="person_img">
                 <img src="../../assets/images/orderCart/person.svg" alt="person">
@@ -50,7 +50,11 @@
 
 <script>
 export default {
-    name: 'RespCard'
+  data(){
+    return {
+      isShow: true,
+    }
+  }
 }
 </script>
 

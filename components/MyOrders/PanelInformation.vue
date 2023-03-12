@@ -1,5 +1,5 @@
 <template>
-    <div class="panel_info">
+    <div v-if="isShow" @click="isShow=false" class="panel_info">
         <div class="btns_func">
             <div class="btn_f">Я исполнитель</div>
             <div class="btn_f active">Я заказчик</div>
@@ -22,7 +22,13 @@
 </template>
 
 <script>
-
+export default {
+  data(){
+    return {
+      isShow: true,
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">

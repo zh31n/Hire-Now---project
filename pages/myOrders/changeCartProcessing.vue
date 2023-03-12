@@ -1,6 +1,6 @@
 <template>
     <div class="changeCart">
-        <OrderNoComplete style="display: none;" />
+        <OrderNoComplete style="display: flex;" />
         <div class="container">
             <div class="changeCart_i">
                 <div class="r_side">
@@ -175,8 +175,8 @@ export default {
 
 <style lang="scss" scoped>
 .changeCart {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .changeCart_i {
@@ -348,8 +348,8 @@ export default {
 
 .btn_cancel:last-child {
     background-color: white;
-    border: 2px solid red;
-    color: red;
+    border: 2px solid #EB5757;
+    color: #EB5757;
     margin-top: 2rem;
 }
 

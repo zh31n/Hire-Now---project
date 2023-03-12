@@ -320,8 +320,8 @@ export default {
     font-size: 16px;
     color: #FFF;
     cursor: pointer;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
 }
 
 
@@ -398,6 +398,7 @@ export default {
     font-weight: 700;
     color: #22305F;
     padding-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 @media (max-width:700px) {

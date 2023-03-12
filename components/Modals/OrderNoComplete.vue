@@ -1,5 +1,5 @@
 <template>
-    <div class="modalChP">
+    <div v-if="isShow" @click="isShow=false" class="modalChP">
         <div class="modalChP_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -51,7 +51,11 @@
 
 <script>
 export default {
-    name: 'OrderNoComplete'
+  data(){
+    return {
+      isShow: true,
+    }
+  }
 }
 </script>
 

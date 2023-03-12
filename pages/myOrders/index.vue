@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <ModalChoosePerformer style="display: ;" />
+        <ModalChoosePerformer />
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
@@ -22,7 +22,7 @@
                             <div class="order_info_i">
                                 <div class="order_info_title">Дизайн HireNow</div>
                                 <div class="order_location">Можно выполнить удаленно</div>
-                                <div class="o_status">Завершить 22 февраля, 23:59</div>
+                                <div class="o_status grey">Завершить 22 февраля, 23:59</div>
                             </div>
                         </div>
                         <div class="order_price">1 000 ₽</div>
@@ -33,7 +33,7 @@
                             <div class="order_info_i">
                                 <div class="order_info_title">Разработка</div>
                                 <div class="order_location">Можно выполнить удаленно</div>
-                                <div class="o_status">Отменено</div>
+                                <div class="o_status red">Отменено</div>
                             </div>
                         </div>
                         <div class="order_price">226 000 ₽</div>
@@ -75,11 +75,17 @@ import ModalChoosePerformer from '../../components/Modals/ModalChoosePerformer.v
 
 export default {
     components: {
-    PanelInformation,
-    OrderInProgress,
-    ModalChoosedPerformer,
-    ModalChoosePerformer
-}
+        PanelInformation,
+        OrderInProgress,
+        ModalChoosedPerformer,
+        ModalChoosePerformer
+    },
+    data() {
+        return {
+            panel: 'none',
+            panel2: true,
+        }
+    }
 }
 </script>
 
@@ -157,6 +163,18 @@ export default {
             font-size: 14px;
             color: #2D9CDB;
         }
+
+        .o_status.grey {
+            color: #828282 !important;
+            background: none !important;
+            border: 0 !important;
+        }
+
+        .o_status.red {
+            color: #EB5757 !important;
+            background: none !important;
+            border: 0 !important;
+        }
     }
 
 }
@@ -231,7 +249,7 @@ export default {
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
     .orderCart {
         min-width: auto !important;
         width: 280px !important;

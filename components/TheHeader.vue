@@ -1,6 +1,7 @@
 <template>
   <div class="header">
-    <ModalMessages style="display: none;" />
+    <ModalMessages/>
+    <Notifications/>
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">

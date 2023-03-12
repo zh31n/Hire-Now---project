@@ -1,11 +1,11 @@
 <template>
-    <div class="modal_messages">
+    <div v-if="isShow" @click="isShow=false" class="modal_messages">
         <div class="modal_messages_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
             </div>
             <div class="modal_messages_inner">
-                <div class="dialogs" style="display: none;">
+                <div class="dialogs">
                     <div class="input_d">
                         <input type="text" name="" id="" placeholder="Введите имя для общения">
                     </div>
@@ -43,8 +43,8 @@
                         <div class="bl_o">2</div>
                     </div>
                 </div>
-                <div class="messanger" style="display: ;">
-                    <div class="messanger_empty" style="display: none;">
+                <div class="messanger">
+                    <div class="messanger_empty">
                         <img src="../../assets/images/Modal/big_msg.svg" alt="">
                         <div class="messanger_empty_title">Выберите, кому хотели бы написать</div>
                     </div>
@@ -93,10 +93,11 @@
 
 <script>
 export default {
-    name: 'ModalMessages',
-    components: {
-
+  data(){
+    return {
+      isShow: true,
     }
+  }
 }
 </script>
 
@@ -450,7 +451,7 @@ export default {
     .modal_messages_i{
         margin-top: 5rem !important;
     }
-    
+
     .msg_messanger{
         height: 70vh;
     }

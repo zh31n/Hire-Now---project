@@ -47,7 +47,6 @@ export default {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-left: 1rem;
 }
 
 .fb_btn_filter.active {

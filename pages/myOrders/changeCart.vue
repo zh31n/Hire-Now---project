@@ -181,8 +181,8 @@ export default {
 
 <style lang="scss" scoped>
 .changeCart {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .changeCart_i {

@@ -1,5 +1,5 @@
 <template>
-    <div class="notifications">
+    <div v-if="isShow" @click="isShow=false" class="notifications">
         <div class="title">Уведомления</div>
         <div class="otklick_items">
             <div class="otklick_item">
@@ -7,7 +7,9 @@
                 <div class="otklick_item_info">
                     <img src="../../assets/images/applepencil.svg" alt="">
                     <div class="otklick_item_txt">
-                        <div class="title">1 Новый отклик к заданию</div>
+                        <div class="title">
+                            1 Новый отклик <span>к заданию</span>
+                        </div>
                         <div class="sup">«Доставить один пакет»</div>
                     </div>
                 </div>
@@ -17,7 +19,9 @@
                 <div class="otklick_item_info">
                     <img src="../../assets/images/applepencil.svg" alt="">
                     <div class="otklick_item_txt">
-                        <div class="title">1 Новый отклик к заданию</div>
+                        <div class="title">
+                            1 Новый отклик <span>к заданию</span>
+                        </div>
                         <div class="sup">«Доставить один пакет»</div>
                     </div>
                 </div>
@@ -27,7 +31,9 @@
                 <div class="otklick_item_info">
                     <img src="../../assets/images/applepencil.svg" alt="">
                     <div class="otklick_item_txt">
-                        <div class="title">1 Новый отклик к заданию</div>
+                        <div class="title">
+                            1 Новый отклик <span>к заданию</span>
+                        </div>
                         <div class="sup">«Доставить один пакет»</div>
                     </div>
                 </div>
@@ -37,7 +43,9 @@
                 <div class="otklick_item_info">
                     <img src="../../assets/images/applepencil.svg" style="opacity: 0;" alt="">
                     <div class="otklick_item_txt">
-                        <div class="title">1 Новый отклик к заданию</div>
+                        <div class="title">
+                            1 Новый отклик <span>к заданию</span>
+                        </div>
                         <div class="sup">«Доставить один пакет»</div>
                     </div>
                 </div>
@@ -47,7 +55,9 @@
                 <div class="otklick_item_info">
                     <img src="../../assets/images/applepencil.svg" style="opacity: 0;" alt="">
                     <div class="otklick_item_txt">
-                        <div class="title">1 Новый отклик к заданию</div>
+                        <div class="title">
+                            1 Новый отклик <span>к заданию</span>
+                        </div>
                         <div class="sup">«Доставить один пакет»</div>
                     </div>
                 </div>
@@ -62,10 +72,11 @@
 
 <script>
 export default {
-    name: 'Notifications',
-    components: {
-
+  data(){
+    return {
+      isShow: true,
     }
+  }
 }
 </script>
 
@@ -118,6 +129,10 @@ export default {
             color: #22305F;
             margin: 0;
             line-height: normal;
+
+            span{
+                font-weight: 400 !important;
+            }
         }
 
         .sup {
@@ -151,6 +166,6 @@ export default {
         right: 0;
         width: 100%;
     }
-    
+
 }
 </style>
