@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="response_card">
+    <div v-if="isShow" @click="isShow = false" class="response_card">
         <div class="rc_ppl">
             <div class="person_img">
                 <img src="../../assets/images/orderCart/person.svg" alt="person">
@@ -29,7 +29,7 @@
                 или лучше звоните, чтобы обсудить детали задания, и уже точно<br>
                 доверить его мне и моему сотруднику. Спасибо
             </div>
-            <div class="ppl_tel">Телефон исполнителя: <span>+7 999 666-62-22</span></div>
+            <div class="ppl_tel">Телефон исполнителя: +7 999 666-62-22</div>
             <div class="rc_btns">
                 <div class="rc_btn_write">Написать в чат</div>
                 <div class="rc_btn_choose">Выбрать исполнителем</div>
@@ -50,11 +50,11 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -256,5 +256,71 @@ export default {
         }
     }
 
+}
+
+@media (max-width:321px) {
+    .rc_info {
+        width: 262px !important;
+        height: 445px !important;
+        padding: 0.86rem;
+
+        .rc_info_price {
+            margin-bottom: 5px;
+            font-size: 14px !important;
+        }
+
+        .payment_type {
+            margin-bottom: 1rem;
+            font-size: 12px !important;
+        }
+
+        .ppl_tel {
+            font-size: 12px !important;
+            font-weight: 700 !important;
+            margin-bottom: 3rem;
+        }
+
+        .rc_btns{
+            flex-direction: column-reverse 
+            !important;
+
+        }
+        .rc_btn_write {
+            width: 229px !important;
+            height: 34px !important;
+            font-size: 12px !important;
+            background-color: #F5F5F5 !important;
+        }
+
+        .rc_btn_choose{
+            width: 229px !important;
+            height: 30px !important;
+            font-size: 12px !important;
+        }
+
+        .rc_i_title{
+            font-size: 8px;
+        }
+    }
+
+    .rc_info_txt {
+        font-size: 10px !important;
+        width: 191px;
+
+        div {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    .rc_func{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px !important;
+
+        .rc_funcs{
+            gap: 2rem;
+        }
+    }
 }
 </style>

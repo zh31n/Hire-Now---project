@@ -201,7 +201,7 @@ export default {
   .down {
     flex-direction: column;
     align-items: center !important;
-    gap: 4px;
+    gap: 10px;
   }
 
   .footer .f_nav {

@@ -1,5 +1,3 @@
-
-
 body,
 .rate-app {
   font-family: 'Lato', sans-serif;
@@ -7,9 +5,10 @@ body,
   color: #000;
   font-size: 100%;
   height: 100%;
+  box-sizing: border-box !important;
 }
 
-.container{
+.container {
   max-width: 1200px !important;
   margin-right: auto;
   margin-left: auto;
