@@ -57,7 +57,7 @@ export default {
 @media (max-width:321px) {
     .feedback_filters {
         align-items: flex-start;
-
+        font-size: 12px !important; 
         .fb_btn_filter {
             width: 117px !important;
             height: 25px !important;

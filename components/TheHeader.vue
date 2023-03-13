@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <ModalMessages style="display: ;"/>
+    <ModalMessages style="display: none;"/>
     <Notifications style="display: none;"/>
     <ModalChoosePerformer style="display: none;"/>
     <!-- <OrderInProgress /> -->

@@ -15,6 +15,7 @@
                             <div class="profile_img">
                                 <img src="../../assets/images/Modal/person.svg" alt="">
                             </div>
+                            <div class="p_greeting mob">Здравствуйте, Антон!</div>
                             <div class="change_img_btn">Добавить фото</div>
                         </div>
                         <div class="profile_info_txt">
@@ -31,10 +32,10 @@
                     </div>
                     <div class="profile_tab">
                         <div class="about_and_money">
-                            <span class="btn_tab ">Обо мне</span>
+                            <span class="btn_tab active">Обо мне</span>
                             <span class="btn_tab ">Счет</span>
                         </div>
-                        <div class="shesternya active">
+                        <div class="shesternya ">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.4267 23H12.5733C13.451 23 14.1384 22.4496 14.3499 21.6029L14.7729 19.7506L15.0478 19.6447L16.6657 20.6503C17.406 21.116 18.2837 20.989 18.9076 20.3645L20.388 18.8827C21.0225 18.2476 21.1283 17.3797 20.663 16.6493L19.6584 15.0299L19.7641 14.7759L21.6147 14.3419C22.4501 14.1302 23 13.4422 23 12.5637V10.4786C23 9.60009 22.4607 8.9121 21.6147 8.70041L19.7747 8.25587L19.669 7.98067L20.6736 6.37184C21.1389 5.64151 21.0331 4.77358 20.3986 4.12793L18.9182 2.64611C18.3048 2.02163 17.4271 1.9052 16.6869 2.36033L15.069 3.35527L14.7729 3.24942L14.3499 1.38656C14.1384 0.539807 13.451 0 12.5733 0H10.4267C9.53839 0 8.85103 0.539807 8.65012 1.38656L8.22713 3.24942L7.93103 3.35527L6.3131 2.36033C5.5623 1.9052 4.69517 2.02163 4.08184 2.64611L2.5908 4.12793C1.9669 4.77358 1.85057 5.64151 2.31586 6.37184L3.32046 7.98067L3.21471 8.25587L1.38529 8.70041C0.53931 8.9121 0 9.60009 0 10.4786V12.5637C0 13.4422 0.549885 14.1302 1.38529 14.3419L3.23586 14.7759L3.33103 15.0299L2.32644 16.6493C1.86115 17.3797 1.97747 18.2476 2.60138 18.8827L4.09241 20.3645C4.70575 20.989 5.58345 21.116 6.32368 20.6503L7.94161 19.6447L8.22713 19.7506L8.65012 21.6029C8.85103 22.4496 9.53839 23 10.4267 23ZM10.7016 21.0525C10.5218 21.0525 10.4267 20.9784 10.4055 20.8196L9.77103 18.2158C9.10483 18.0571 8.45977 17.7819 7.94161 17.4538L5.65747 18.8615C5.52 18.9462 5.3931 18.9356 5.26621 18.8086L4.15586 17.6972C4.02897 17.5808 4.02897 17.4538 4.11356 17.3162L5.52 15.0299C5.22391 14.5219 4.94897 13.8868 4.79034 13.22L2.17839 12.5955C2.01977 12.5743 1.93517 12.4791 1.93517 12.2991V10.7326C1.93517 10.5421 2.0092 10.468 2.17839 10.4257L4.77977 9.81178C4.93839 9.10262 5.24506 8.44639 5.50943 7.97009L4.10299 5.70502C4.01839 5.55683 4.01839 5.42982 4.13471 5.30281L5.25563 4.20202C5.38253 4.0856 5.49885 4.06443 5.65747 4.15969L7.92046 5.54625C8.39632 5.24988 9.10483 4.95352 9.78161 4.78417L10.4055 2.1804C10.4267 2.02163 10.5218 1.93695 10.7016 1.93695H12.2984C12.4782 1.93695 12.5628 2.01104 12.5945 2.1804L13.229 4.79475C13.9163 4.9641 14.5402 5.24988 15.069 5.54625L17.332 4.15969C17.4906 4.07501 17.6069 4.0856 17.7338 4.21261L18.8547 5.31339C18.9816 5.42982 18.9816 5.55683 18.8864 5.70502L17.4906 7.97009C17.7444 8.44639 18.0616 9.10262 18.2202 9.81178L20.8216 10.4257C20.9908 10.468 21.0543 10.5421 21.0543 10.7326V12.2991C21.0543 12.4791 20.9802 12.5743 20.8216 12.5955L18.2097 13.22C18.051 13.8868 17.7655 14.5324 17.4694 15.0299L18.8759 17.3056C18.9605 17.4538 18.9605 17.5702 18.8336 17.6866L17.7232 18.8086C17.5963 18.9356 17.4694 18.9462 17.332 18.8615L15.0584 17.4538C14.5297 17.7819 13.9269 18.0465 13.229 18.2158L12.5945 20.8196C12.5628 20.9784 12.4782 21.0525 12.2984 21.0525H10.7016ZM11.5053 15.5168C13.7048 15.5168 15.5131 13.7069 15.5131 11.4947C15.5131 9.30373 13.7048 7.49379 11.5053 7.49379C9.29517 7.49379 7.47632 9.30373 7.47632 11.4947C7.47632 13.7069 9.29517 15.5168 11.5053 15.5168ZM11.5053 13.6857C10.2998 13.6857 9.31632 12.7013 9.31632 11.4947C9.31632 10.3092 10.3103 9.3249 11.5053 9.3249C12.6791 9.3249 13.6625 10.3092 13.6625 11.4947C13.6625 12.6908 12.6791 13.6857 11.5053 13.6857Z"
@@ -42,7 +43,24 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="profile_about_me" >
+                    <div class="profile_about_me">
+                        <div class="profile_about_me_mob" style="display: none;">
+                            <div class="profile_info_txt">
+                                <div class="profile_avg_estimate">
+                                    Средняя оценка 5.0
+                                    <img src="../../assets/images/Modal/Star.svg" alt="">
+                                    <span>(2 отзыва)</span>
+                                </div>
+                                <div class="profile_have_tasks">
+                                    Создал
+                                    <span>3 задания</span>
+                                </div>
+                            </div>
+                            <div class="p_views">
+                                <img src="../../assets/images/orderCart/eye.svg" alt="">
+                                <span>112</span> просмотров профиля
+                            </div>
+                        </div>
                         <div class="little_about_me">
                             Немного о себе
                             <div>
@@ -104,7 +122,7 @@
                             <FeedBackItem />
                         </div>
                     </div>
-                    <div class="profile_score" >
+                    <div class="profile_score">
                         <div class="balance">Ваш баланс <span>0</span> ₽</div>
                         <div class="replenish_balance">
                             <div class="replenish_balance_i">
@@ -116,6 +134,12 @@
                         </div>
                         <div class="opration_history">
                             <div class="oh_title">История операций</div>
+                            <div class="oh_select" style="display: none;">
+                                <select name="" id="">
+                                    <option value="">за месяц</option>
+                                </select>
+                                <img src="../../assets/images/arr_d.svg" alt="">
+                            </div>
                             <div class="oh_filter">
                                 <span class="active">Все операции</span>
                                 <span>Пополнения счета</span>
@@ -141,15 +165,19 @@
                                 <div>Фамилия</div>
                                 <input type="text" name="" id="">
                             </div>
+                            <div class="pd_input">
+                                <div>Дата рождения</div>
+                                <input type="text" name="" id="">
+                            </div>
                             <div class="pd_sex">
                                 <div class="title_sex">Пол</div>
                                 <div class="pd_sex_i">
                                     <div class="male">
-                                        <div class="oran"></div>
+                                        <div class="oran active"></div>
                                         Мужчина
                                     </div>
                                     <div class="male ">
-                                        <div class="oran active"></div>
+                                        <div class="oran "></div>
                                         Женщина
                                     </div>
                                 </div>
@@ -177,7 +205,7 @@
                             <div class="btn">Сохранить</div>
                         </div>
                         <div class="choose_category">
-                            <div class="choose_category_title"></div>
+                            <div class="choose_category_title">Выберите категории</div>
                             <div class="cc_item">
                                 <div class="cc_item_title">
                                     <img src="../../assets/images/arr_d.svg" alt="">
@@ -287,7 +315,7 @@
                                 </div>
                                 <div class="title">Геопозиция. Москва и Новая Москва</div>
                                 <div class="pd_input">
-                                    <div>Имя</div>
+                                    <div>Город</div>
                                     <input type="text" name="" id="">
                                 </div>
                                 <div class="big_sq"></div>
@@ -312,10 +340,10 @@
                                     <OrangeInput />
                                     Получать подборку рекомендованных заданий
                                 </div>
-                                <div class="btn">Сохранить</div>
+                                <div class="btn sq">Сохранить</div>
                             </div>
                         </div>
-                        <div class="security" >
+                        <div class="security">
                             <div class="title">Изменить пароль</div>
                             <div class="sup">Придумайте новый пароль с такими требованиями:</div>
                             <ul>
@@ -360,7 +388,7 @@
                             <span>Привязать</span>
                         </div>
                     </div>
-                     <div class="sb_txt">
+                    <div class="sb_txt">
                         Повысьте доверие пользователей к<br>
                         себе — привяжите ваши аккаунты<br>
                         социальных сетей к профилю<br>
@@ -767,7 +795,7 @@ export default {
         color: #22305F;
         margin-top: 1rem;
 
-        .replenish_balance_i{
+        .replenish_balance_i {
             display: flex;
             align-items: center;
             gap: 10px;
@@ -811,6 +839,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+
     .oh_title {
         font-size: 22px;
         color: #22305F;
@@ -918,7 +947,7 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 16px !important;
-    // font-weight: 700;
+    font-weight: 700;
     color: white;
     cursor: pointer;
     margin-top: 4rem;
@@ -1190,7 +1219,7 @@ export default {
         gap: 10px;
     }
 
-    .op_btns{
+    .op_btns {
         width: 100%;
         flex-wrap: wrap;
         gap: 10px;
@@ -1223,7 +1252,7 @@ export default {
         width: 100%;
     }
 
-    .big_sq{
+    .big_sq {
         width: 100% !important;
     }
 
@@ -1233,9 +1262,10 @@ export default {
 
 @media (max-width:660px) {
 
-    .p_greeting{
+    .p_greeting {
         font-size: 22px !important;
     }
+
     .opration_history {
         width: 100% !important;
     }
@@ -1259,36 +1289,299 @@ export default {
         justify-content: center !important;
     }
 
-    .pd_input input{
+    .pd_input input {
         width: 100%;
     }
 
-    .pd_sex_i{
+    .pd_sex_i {
         width: 100%;
     }
 
-    .op_btn_gr{
+    .op_btn_gr {
         margin-right: auto !important;
         margin-left: auto !important;
     }
 
-    .inps_or{
+    .inps_or {
         width: 100%;
         font-size: 13px !important;
     }
 
-    .give_notifiactions .btn{
+    .give_notifiactions .btn {
         margin-right: auto;
         margin-left: auto;
     }
 
-    .or_inps{
+    .or_inps {
         width: 100% !important;
     }
 
-    .cc_btns_line{
+    .cc_btns_line {
         flex-wrap: wrap;
         gap: 10px;
+    }
+}
+
+@media (max-width:321px) {
+
+    .p_greeting {
+        display: none;
+    }
+
+    .p_greeting.mob {
+        display: block !important;
+        font-size: 18px !important;
+        margin-top: 1rem;
+    }
+
+    .p_views,
+    .profile_info_txt {
+        display: none;
+    }
+
+    .profile_about_me_mob {
+        display: block !important;
+
+        .p_views {
+            display: flex !important;
+        }
+
+        .profile_info_txt {
+            display: block !important;
+        }
+    }
+
+    .profile_change_img {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_tab {
+        margin-top: 2rem !important;
+    }
+
+    .profile_avg_estimate {
+        font-size: 14px !important;
+        align-items: center;
+        padding-bottom: 1rem !important;
+
+        span {
+            font-size: 12px !important;
+        }
+    }
+
+    .profile_have_tasks {
+        font-size: 12px !important;
+        margin-bottom: 1rem;
+
+        span {
+            color: #2D9CDB;
+        }
+    }
+
+    .p_views {
+        font-size: 14px !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem !important;
+    }
+
+    .little_about_me {
+        font-size: 14px !important;
+
+        img {
+            height: 10px;
+            width: 10px;
+        }
+
+        span {
+            font-size: 8px !important;
+        }
+    }
+
+    .about_exr {
+        font-size: 12px !important;
+    }
+
+    .block_specifications {
+        width: 285px !important;
+        height: 204px !important;
+
+        .profile_avg_estimate {
+            font-size: 18px !important;
+        }
+
+        .block_specifications_i {
+            gap: 20px;
+        }
+    }
+
+    .feedback {
+        .title {
+            display: none !important;
+        }
+    }
+
+    .replBal_inp {
+        width: 112px !important;
+        height: 38px !important;
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 60px !important;
+    }
+
+    .replenish_balance {
+        justify-content: flex-start !important;
+    }
+
+    .replBal_btn {
+        width: 229px !important;
+        height: 34px !important;
+        font-size: 12px !important;
+        margin-left: 2rem !important;
+    }
+
+    .opration_history {
+        width: 280px !important;
+        height: 222px !important;
+        padding: 1rem !important;
+
+        .oh_title {
+            font-size: 18px !important;
+        }
+    }
+
+    .op_btns {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .oh_select {
+        width: 160px;
+        height: 45px !important;
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 60px;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-around;
+        padding: .5rem;
+
+        select {
+            width: 80%;
+            outline: 0;
+            font-size: 14px;
+            color: #22305F;
+        }
+    }
+
+    .oh_filter {
+        font-size: 10px !important;
+        margin-top: .5rem;
+    }
+
+    .oh_suop {
+        font-size: 10px !important;
+    }
+
+    .op_btn_gr {
+        width: 240px !important;
+        height: 55px !important;
+        font-size: 15px !important;
+    }
+
+    .give_notifiactions {
+        .title {
+            font-size: 22px !important;
+            text-align: center;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    .choose_category {
+        .choose_category_title {
+            font-size: 18px;
+            color: #22305F;
+            font-weight: 700;
+        }
+
+        .cc_item {
+            img {
+                display: none !important;
+            }
+        }
+    }
+
+    .or_inps {
+        justify-content: unset !important;
+        gap: 40px;
+
+        .inps_or {
+            font-size: 16px !important;
+            gap: 10px;
+            width: auto !important;
+
+            .oran {
+                margin: 0 !important;
+            }
+        }
+    }
+
+    .cc_item {
+        .sup {
+            font-size: 10px !important;
+            width: 262px !important;
+
+            br {
+                display: none;
+            }
+        }
+
+        .title {
+            font-size: 18px !important;
+            margin-top: 2rem !important;
+        }
+
+    }
+
+    .inps_or {
+        font-size: 10px !important;
+    }
+
+    .btn.sq {
+        width: 240px !important;
+        height: 55px !important;
+        background: #6FC727;
+        border-radius: 7px !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem !important;
+    }
+    .security{
+        .title{
+            font-size: 18px !important;
+            color: #22305F;
+            margin-bottom: 1rem !important; 
+        }
+
+        .sup{
+            font-size: 10px !important;
+        }
+
+        ul{
+            font-size: 8px !important;
+        }
+
+        .btn{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .sessions{
+        font-size: 8px !important;
     }
 }
 </style>
