@@ -5,46 +5,9 @@
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
             </div>
             <div class="modal_messages_inner">
-                <div class="dialogs">
-                    <div class="input_d">
-                        <input type="text" name="" id="" placeholder="Введите имя для общения">
-                    </div>
-                    <div class="msg_item active">
-                        <img src="../../assets/images/Modal/Аватар.svg" alt="">
-                        <div class="msg_item_txt">
-                            <span class="name">Владислав S.</span><br>
-                            <span>Был 01.02.22</span>
-                        </div>
-                        <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
-                    </div>
-                    <div class="msg_item">
-                        <img src="../../assets/images/Modal/Аватар.svg" alt="">
-                        <div class="msg_item_txt">
-                            <span class="name">Владислав S.</span><br>
-                            <span>Был 01.02.22</span>
-                        </div>
-                        <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
-                    </div>
-                    <div class="msg_item ">
-                        <img src="../../assets/images/Modal/Аватар.svg" alt="">
-                        <div class="msg_item_txt">
-                            <span class="name">Владислав S.</span><br>
-                            <span>Был 01.02.22</span>
-                        </div>
-                        <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
-                    </div>
-                    <div class="msg_item">
-                        <img src="../../assets/images/Modal/Аватар.svg" alt="">
-                        <div class="msg_item_txt">
-                            <span class="name" style="color: orange;">Владислав S.</span><br>
-                            <span>Был 01.02.22</span>
-                        </div>
-                        <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
-                        <div class="bl_o">2</div>
-                    </div>
-                </div>
-                <div class="messanger">
-                    <div class="messanger_empty">
+                <MessageDialogs style="display: none;" />
+                <div class="messanger" style="display: ;">
+                    <div class="messanger_empty" style="display: none;">
                         <img src="../../assets/images/Modal/big_msg.svg" alt="">
                         <div class="messanger_empty_title">Выберите, кому хотели бы написать</div>
                     </div>
@@ -62,7 +25,7 @@
                             <div class="date">02.02.23, 08:04</div>
                         </div>
                         <div class="message_guy">
-                            Здравствуйте!<br>
+                            <div>Здравствуйте!</div><br>
                             Ваше задание "75576" удалено.<br>
                             К сожалению, мы не совсем поняли, что все-таки должен сделать<br>
                             исполнитель :( Пожалуйста, уточните вашу задачу и опубликуйте<br>
@@ -72,7 +35,7 @@
                             московскому времени.
                         </div>
                         <div class="name_date_guy">
-                            <div class="name">Александр</div>
+                            <div class="name" style="color: #22305F;">Александр</div>
                             <div class="date">4:01</div>
                         </div>
                         <div class="message_guy">
@@ -92,13 +55,16 @@
 </template>
 
 <script>
+import MessageDialogs from './MessageDialogs.vue';
+
 export default {
-    name: 'ModalMessages',
+    name: "ModalMessages",
     data() {
         return {
             isShow: true,
-        }
-    }
+        };
+    },
+    components: { MessageDialogs }
 }
 </script>
 
@@ -145,100 +111,7 @@ export default {
     }
 }
 
-.dialogs {
-    width: 350px;
-    height: 665px;
-    border-right: 1px solid #D9D9D9;
-    padding-top: 2rem;
-    transition: all .3s;
 
-    .input_d {
-        width: 315px;
-        height: 40px;
-        background: #FFFFFF;
-        border: 1px solid #D9D9D9;
-        border-radius: 5px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 1rem;
-
-        input {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            outline: 0;
-            padding-left: 1rem;
-        }
-
-        input::placeholder {
-            color: #828282;
-            font-weight: 400;
-            font-size: 14px;
-        }
-    }
-}
-
-
-.msg_item.active {
-    background-color: #D9D9D9;
-
-    .trash {
-        margin-left: 40%;
-        display: block;
-        cursor: pointer;
-    }
-}
-
-.msg_item:hover {
-    // background-color: #D9D9D9;
-    transition: all .3s;
-
-    .trash {
-        margin-left: 40%;
-        display: block;
-    }
-
-    .bl_o {
-        display: none;
-    }
-}
-
-.msg_item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #D9D9D9;
-    // cursor: pointer;
-    transition: all .3s;
-    position: relative;
-    z-index: 100;
-
-    img {
-        margin-left: 1rem;
-    }
-
-    .trash {
-        margin-left: 40%;
-        display: none;
-    }
-
-    .msg_item_txt {
-        margin-left: 1rem;
-
-        .name {
-            font-size: 14px;
-            font-weight: 700;
-            color: #22305F;
-        }
-
-        span {
-            font-size: 12px;
-            color: #828282;
-        }
-    }
-}
 
 .messanger_empty {
     width: 750px;
@@ -261,19 +134,7 @@ export default {
     height: 665px;
 }
 
-.bl_o {
-    margin-left: 40%;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    color: white;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-    font-weight: 700;
-}
+
 
 .msg_messanger {
     height: 490px;
@@ -422,14 +283,14 @@ export default {
     }
 
     .modal_messages_i {
-        margin-top: 10% !important;
+        margin-top: 11% !important;
         // padding-top: 30%;
         width: 100vw !important;
         height: 94.3vh !important;
     }
 
     .dialogs {
-        width: 95%;
+        width: 100%;
         height: 90vh;
         border: none !important;
     }
@@ -470,10 +331,67 @@ export default {
         height: 65vh !important;
     }
 }
+@media (max-height: 625px){
+    .msg_messanger {
+        height: 68vh !important;
+    }
+}
 
 @media (max-height: 480px) {
     .msg_messanger {
         height: 55vh;
+    }
+}
+
+@media (max-width: 321px) {
+    .close_img {
+        display: none;
+    }
+
+    .modal_messages .modal_messages_i {
+        margin-top: 87px !important;
+        border-radius: 0 !important;
+    }
+
+    .messanger {
+        width: 100% !important;
+        padding-top: 2rem !important;
+
+        .msg_people {
+            padding-top: 0 !important;
+            border-top: 0 !important;
+            border-color: #D9D9D9 !important;
+        }
+        .msg_input_send{
+            height: 50px !important;
+            border-top: 0 !important; 
+        }
+        .msg_input_send_inp {
+            width: 228px !important;
+            height: 28px !important;
+            font-size: 10px !important; 
+        }
+
+        .message_guy{
+            font-size: 10px !important;
+            width: 216px !important;
+            margin-top: 1rem !important;
+
+            br{
+                display: none !important;
+            }
+        }
+
+        .name_date_guy{
+            width: 95% !important;
+            .name{
+                font-size: 12px !important;
+            }
+
+            .date{
+                font-size: 10px !important; 
+            }
+        }
     }
 }
 </style>

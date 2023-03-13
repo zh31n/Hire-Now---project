@@ -159,4 +159,60 @@ export default {
         }
     }
 }
+
+@media (max-width:320px) {
+    .modal_task .select {
+        width: 90%;
+
+        select {
+            width: 95%;
+            height: 100%;
+        }
+
+        img {
+            left: 16rem;
+        }
+    }
+
+    .title {
+        font-size: 16px !important;
+    }
+
+    .select {
+        width: 261px !important;
+        height: 29px !important;
+        font-size: 10px !important;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8rem !important;
+    }
+
+    .modal_task .select img {
+        position: unset !important;
+        padding-right: 0.5rem;
+    }
+
+    .md_sup {
+        font-size: 10px !important;
+        width: 255px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .btn {
+        width: 261px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        margin-top: 16rem !important;
+    }
+
+    .title {
+        line-height: normal !important;
+    }
+
+    .sup{
+        margin-top: 8rem !important;
+    }
+}
 </style>

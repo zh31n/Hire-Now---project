@@ -1,14 +1,16 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="panel_info">
+    <div v-if="isShow" @click="isShow = false" class="panel_info">
         <div class="btns_func">
             <div class="btn_f">Я исполнитель</div>
             <div class="btn_f active">Я заказчик</div>
         </div>
         <div class="info">
-            <span>Всего вы создали <span>3</span> задания(-ий) , из них:</span>
+            <span>Всего вы создали <span>3</span> задания, из них:</span>
             <div class="info_orders">
-                <span class='i_orders_item'>Открыто: <span>66</span></span>
-                <span class='i_orders_item'>Выполняется: <span>2</span></span>
+                <div class="info_orders_ii">
+                    <span class='i_orders_item'>Открыто: <span>66</span></span>
+                    <span class='i_orders_item'>Выполняется: <span>2</span></span>
+                </div>
                 <span class='i_orders_item'>Выполнено: <span>243</span></span>
             </div>
         </div>
@@ -23,11 +25,12 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: 'PanelInformation',
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -168,9 +171,9 @@ export default {
 
 @media (max-width: 480px) {
     .btn_f {
-       min-width: 120px !important;
-       width: auto !important;
-       font-size: 12px;
+        min-width: 120px !important;
+        width: auto !important;
+        font-size: 12px;
     }
 
     .panel_info {
@@ -188,4 +191,55 @@ export default {
     }
 }
 
+@media (max-width: 321px) {
+    .panel_info{
+        height: auto !important;
+    }
+    .btns_func {
+        .btn_f {
+            width: 142px !important;
+            height: 26px !important;
+            border: 1px solid #D9D9D9;
+            font-size: 12px !important;
+
+            .count_otclick {
+                width: 15px;
+                height: 15px;
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    .i_orders_item{
+        font-size: 12px !important;
+    }
+
+    .info_orders{
+        display: flex;
+        justify-content: space-between;
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: unset !important;
+        margin-top: 1rem !important;
+    }
+
+    .info_orders_ii{
+        display: flex;
+        align-items: flex-start !important;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .point_buis{
+        justify-content: flex-start !important;
+        margin-left: 1rem;
+    }
+
+    .info{
+        margin-top: 2rem !important;
+    }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="notifications">
+    <div v-if="isShow" @click="isShow = false" class="notifications">
         <div class="title">Уведомления</div>
         <div class="otklick_items">
             <div class="otklick_item">
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="type_btns">
-            <span>Отметить все как<br>прочитанные</span>
+            <span>Отметить все как<br> прочитанные</span>
             <span>Показать еще</span>
         </div>
     </div>
@@ -72,12 +72,12 @@
 
 <script>
 export default {
-    name:'Notifications',
-  data(){
-    return {
-      isShow: true,
+    name: 'Notifications',
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -91,7 +91,7 @@ export default {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     position: absolute;
-    top:100%;
+    top: 100%;
     right: 10%;
     z-index: 1;
 
@@ -131,7 +131,7 @@ export default {
             margin: 0;
             line-height: normal;
 
-            span{
+            span {
                 font-weight: 400 !important;
             }
         }
@@ -146,7 +146,7 @@ export default {
     }
 }
 
-.type_btns{
+.type_btns {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -157,16 +157,79 @@ export default {
     align-items: center;
     margin-top: 1.5rem;
 
-    span{
+    span {
         cursor: pointer;
     }
 }
 
 @media (max-width:381px) {
-    .notifications{
+    .notifications {
         right: 0;
         width: 100%;
     }
 
 }
-</style>
+
+@media (max-width:321px) {
+    .notifications {
+        top: 42px;
+        right: -13px;
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+    .title {
+        font-size: 16px !important;
+    }
+
+    .otklick_item {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        border-color: #D9D9D9 !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .notifications .otklick_item_txt .title,
+    .notifications .otklick_item_txt .sup {
+        font-size: 10px !important;
+    }
+
+    .type_btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .type_btns span:first-child {
+        width: 229px;
+        height: 34px;
+        background: #6FC727;
+        border-radius: 60px;
+        color: white;
+        font-size: 12px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+
+        br {
+            display: none;
+        }
+    }
+
+    .type_btns span:last-child {
+        width: 229px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 60px;
+        font-size: 12px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #22305F;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+}</style>

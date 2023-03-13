@@ -1,9 +1,10 @@
 <template>
   <div class="header">
-    <ModalMessages style="display: none;"/>
+    <ModalMessages style="display: ;"/>
     <Notifications style="display: none;"/>
     <ModalChoosePerformer style="display: none;"/>
-    <OrderInProgress />
+    <!-- <OrderInProgress /> -->
+    <!-- <CreatedOfferTask /> -->
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">
@@ -41,11 +42,13 @@ import ModalMessages from './Modals/ModalMessages.vue';
 import ModalChoosePerformer from './Modals/ModalChoosePerformer.vue';
 import Notifications from './Modals/Notifications.vue';
 import OrderInProgress from './Modals/OrderInProgress.vue';
+import OfferTask from './Modals/OfferTask.vue';
+import CreatedOfferTask from './Modals/CreatedOfferTask.vue';
 
 
 
 export default {
-  components: { Notifications, ModalMessages, ModalChoosePerformer, OrderInProgress }
+  components: { Notifications, ModalMessages, ModalChoosePerformer, OrderInProgress, OfferTask, CreatedOfferTask }
 }
 </script>
 

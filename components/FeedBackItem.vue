@@ -105,5 +105,27 @@ export default {
     }
 }
 
+@media (max-width:321px){
+
+    .fb_item{
+        padding-bottom: 1rem !important;
+    }
+
+    .fb_data{
+        font-size: 10px !important;
+    }
+    .fb_item_info_title{
+        font-size: 10px !important;
+    }
+
+    .fb_item_info_status{
+        font-size: 10px !important;
+    }
+
+    .fb_item_info_client{
+        font-size: 10px !important;
+    }
+}
+
 
 </style>

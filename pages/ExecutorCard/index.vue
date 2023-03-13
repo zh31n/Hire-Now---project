@@ -9,6 +9,7 @@
                     <div class="exr_inform">
                         <div class="exr_name">Никита Белокопытов</div>
                         <div class="exr_since">
+                            <div class="exr_age_city mobile">23 года, Москва</div>
                             <span>На HireNow с 3 апреля 2020</span>
                             <span class="status">Сейчас на сайте</span>
                         </div>
@@ -46,15 +47,15 @@
                                     <span>168 отзывов</span>
                                 </div>
                             </div>
-                            <div class="exr_stat">
+                            <div class="exr_stat t_l">
                                 <div class="exr_stat_title">4 года</div>
                                 <div class="exr_stat_sup">опыта</div>
                             </div>
                             <div class="exr_stat">
-                                <div class="exr_stat_title">167 заданий</div>
+                                <div class="exr_stat_title ">167 заданий</div>
                                 <div class="exr_stat_sup">выполнил</div>
                             </div>
-                            <div class="exr_stat">
+                            <div class="exr_stat t_l">
                                 <div class="exr_stat_title">24 задания</div>
                                 <div class="exr_stat_sup">создал</div>
                             </div>
@@ -72,6 +73,39 @@
                                 работы! -->
                             </p>
                             <div class="btn_all_about">Показать полностью</div>
+                        </div>
+                        <div class="examples_job_mob" style="display: none;">
+                            <div class="exj_titlr">Примеры работ</div>
+                            <div class="exm_job_line">
+                                <div class="exm_job_line_info">
+                                    <div class="exm_job_img"></div>
+                                    <div class="ex_job_inf">
+                                        <div class="">Сертификаты</div>
+                                        <div class="">6 фотографий</div>
+                                    </div>
+                                </div>
+                                <img src="../../assets/images/arr_r.svg" alt="">
+                            </div>
+                            <div class="exm_job_line">
+                                <div class="exm_job_line_info">
+                                    <div class="exm_job_img"></div>
+                                    <div class="ex_job_inf">
+                                        <div class="">Сертификаты</div>
+                                        <div class="">6 фотографий</div>
+                                    </div>
+                                </div>
+                                <img src="../../assets/images/arr_r.svg" alt="">
+                            </div>
+                            <div class="exm_job_line">
+                                <div class="exm_job_line_info">
+                                    <div class="exm_job_img"></div>
+                                    <div class="ex_job_inf">
+                                        <div class="">Сертификаты</div>
+                                        <div class="">6 фотографий</div>
+                                    </div>
+                                </div>
+                                <img src="../../assets/images/arr_r.svg" alt="">
+                            </div>
                         </div>
                         <div class="examples_job">
                             <div class="example">
@@ -92,6 +126,34 @@
                         </div>
                         <div class="types_work">
                             <div class="types_work_title">Виды выполняемых работ</div>
+                            <div class="tw_mob" style="display: none;">
+                                <div class="exm_job_line">
+                                    <div class="exm_job_line_info">
+                                        <!-- <div class="exm_job_img"></div> -->
+                                        <img src="../../assets/images/Компьтерная помощь_small.svg" alt="">
+                                        <div class="ex_job_inf">
+                                            <div class="">Грузоперевозки</div>
+                                            <div class="">1 задание</div>
+                                        </div>
+                                    </div>
+                                    <img src="../../assets/images/arr_r.svg" alt="">
+                                </div>
+                                <div class="exm_job_line" style="border-bottom: 0 !important;">
+                                    <div class="exm_job_line_info">
+                                        <!-- <div class="exm_job_img"></div> -->
+                                        <img src="../../assets/images/Компьтерная помощь_small.svg" alt="">
+                                        <div class="ex_job_inf">
+                                            <div class="">Грузоперевозки</div>
+                                            <div class="">1 задание</div>
+                                        </div>
+                                    </div>
+                                    <img src="../../assets/images/arr_r.svg" class="rotated" alt="">
+                                </div>
+                                <div class="ex_job_inf" style="margin-top: 1rem;">
+                                    <div class="">Перевозка вещей, переезды</div>
+                                    <div class="">1 задание</div>
+                                </div>
+                            </div>
                             <div class="type_work">
                                 <img src="../../assets/images/Modal/Разработка ПО.svg" alt="">
                                 <div class="type_work_i">
@@ -163,7 +225,10 @@
                                 <FeedBackItem />
                             </div>
                         </div>
-                        <div class="btn_all_about" style="bottom: 0;margin-top: 3rem;">Показать ещё</div>
+                        <div class="btn_all_about" style="bottom: 0;margin-top: 3rem;">
+                            Показать ещё
+                        </div>
+                        <div class="offer_tsk_btn" style="display: none;">Предложить задание</div>
                     </div>
                 </div>
             </div>
@@ -561,6 +626,58 @@ export default {
     display: none;
 }
 
+.exr_since {
+    .exr_age_city {
+        display: none;
+    }
+}
+
+.exj_titlr {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #22305F;
+    margin-bottom: 1rem;
+}
+
+.exm_job_line {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D9D9D9;
+
+    .ex_job_inf {
+        font-size: 12px !important;
+
+        div:first-child {
+            color: #22305F;
+        }
+
+        div:last-child {
+            color: #828282;
+        }
+    }
+
+    .exm_job_line_info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        .exm_job_img {
+            width: 33px;
+            height: 33px;
+            background: #D9D9D9;
+            border-radius: 5px;
+        }
+    }
+}
+
+.rotated {
+    transform: rotate(270deg);
+}
+
 // Media
 
 @media (max-width:880px) {
@@ -681,5 +798,129 @@ export default {
     .exr_info .status {
         margin-left: 0;
     }
+}
+
+@media (max-width:321px) {
+    .examples_job_mob {
+        display: block !important;
+    }
+
+    .exr_name {
+        margin-top: 1rem;
+        font-size: 18px !important;
+    }
+
+    .exr_age_city {
+        display: none;
+    }
+
+    .exr_info_ava {
+        margin-left: 2rem;
+    }
+
+    .exr_since {
+        flex-direction: column;
+        margin-bottom: 1rem !important;
+
+        .exr_age_city.mobile {
+            display: block !important;
+        }
+
+        .status {
+            display: none;
+        }
+    }
+
+    .exr_veryfication {
+        gap: 0 !important;
+    }
+
+    .exr_stat {
+        margin: 0 !important;
+    }
+
+    .exr_stats {
+        justify-content: space-between;
+
+        .exr_stat.t_l {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end !important;
+        }
+    }
+
+    .exr_about_txt {
+        font-size: 12px !important;
+    }
+
+    .btn_all_about {
+        width: 229px !important;
+        height: 30px !important;
+        font-size: 12px !important;
+    }
+
+    .examples_job {
+        display: none;
+    }
+
+    .types_work_title {
+        font-size: 18px !important;
+    }
+
+    .type_work {
+        display: none;
+    }
+
+    .tw_mob {
+        display: block !important;
+    }
+
+    .exr_feedback_up {
+        align-items: flex-start !important;
+
+        .avg_estimation {
+            font-size: 16px !important;
+        }
+
+        .feedbacks {
+            font-size: 16px !important;
+        }
+    }
+
+    .feedback_filters {
+        align-items: flex-start;
+
+        .conn {
+            .fb_btn_filter {
+                width: 117px !important;
+                height: 25px !important;
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    .btn_all_about {
+        width: 220px !important;
+        height: 50px !important;
+        font-size: 14px !important;
+    }
+
+    .offer_tsk_btn {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 35px;
+        background: #6FC727;
+        border-radius: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        color: white;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        margin-bottom: 2rem;
+    }
+
 }
 </style>

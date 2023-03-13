@@ -28,7 +28,7 @@ export default {
     flex-wrap: wrap;
     gap: 10px;
 
-    div{
+    div {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
@@ -52,5 +52,18 @@ export default {
 .fb_btn_filter.active {
     background-color: #FDEAC2;
     border: 0;
+}
+
+@media (max-width:321px) {
+    .feedback_filters {
+        align-items: flex-start;
+
+        .fb_btn_filter {
+            width: 117px !important;
+            height: 25px !important;
+            font-size: 10px !important;
+        }
+
+    }
 }
 </style>

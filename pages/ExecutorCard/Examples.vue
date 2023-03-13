@@ -1,10 +1,7 @@
 <template>
     <div class="exmpls">
         <div class="container">
-          <CreatedOfferTask/>
-          <Notifications/>
-          <OfferTask/>
-          <div class="examples">
+            <div class="examples">
                 <div class="examples_i">
                     <div class="btn_back">
                         <img src="../../assets/images/Arrow.svg" alt="arrow">
@@ -24,10 +21,11 @@
                         <div class="ex_block"></div>
                         <div class="ex_block"></div>
                     </div>
-                    <div class="btn_back">
+                    <div class="btn_back mobile_no">
                         <img src="../../assets/images/Arrow.svg" alt="arrow">
                         <span>Вернуться в профиль</span>
                     </div>
+                    <div class="offer_tsk_btn" style="display: none;">Предложить задание</div>
                 </div>
                 <div class="side_offer">
                     <div class="offer_job_btn">Предложить задание</div>
@@ -43,15 +41,18 @@
 
 <script>
 import CreatedOfferTask from '../../components/Modals/CreatedOfferTask.vue';
-import Notifications from '../../components/Modals/Notifications.vue';
+import CreateOfferTask from '../../components/Modals/CreateOfferTask.vue';import Notifications from '../../components/Modals/Notifications.vue';
 import OfferTask from '../../components/Modals/OfferTask.vue';
+
 
 
 export default {
     components: {
     CreatedOfferTask,
+    Notifications,
+    CreateOfferTask,
     OfferTask,
-    Notifications
+    CreateOfferTask
 }
 }
 
@@ -140,27 +141,70 @@ export default {
 
 @media (max-width:721px) {
 
-    .exapmle_blocks{
+    .exapmle_blocks {
         gap: 15px !important;
         width: auto !important;
         height: auto !important;
         align-items: center !important;
     }
-    .ex_block{
+
+    .ex_block {
         width: 240px !important;
         height: 240px !important;
     }
 }
 
-@media (max-width:500px){
-    .e_title{
+@media (max-width:500px) {
+    .e_title {
         font-size: 18px !important;
         text-align: center;
     }
 
-    .e_sup{
+    .e_sup {
         font-size: 10px !important;
         text-align: center;
     }
+}
+
+
+@media (max-width:321px) {
+    .side_offer{
+        display: none !important;
+    }
+
+    .btn_back.mobile_no{
+        display: none !important;
+    }
+    .offer_tsk_btn {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 35px;
+        background: #6FC727;
+        border-radius: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        color: white;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        margin-bottom: 2rem;
+    }
+
+    .btn_back{
+        font-size: 12px !important;
+    }
+
+    .e_title{
+        font-size: 18px !important;
+        text-align: left !important;
+    }
+
+    .e_sup{
+        font-size: 10px !important;
+        text-align: left !important;
+    }
+
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="myOrders">
-        <ModalChoosePerformer />
+        <!-- <ModalChoosePerformer /> -->
         <div class="container">
             <div class="myOrders_i">
                 <div class="r_side">
@@ -249,17 +249,39 @@ export default {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
     .orderCart {
-        min-width: auto !important;
-        width: 280px !important;
-        padding: 0.5rem !important;
+        width: 278px !important;
+        height: 108px !important;
+        padding: 0.8rem !important;
+        display: block !important;
         margin-right: auto;
         margin-left: auto;
+        justify-content: flex-start !important;
+
+        .order_info{
+            align-items: flex-start !important;
+            img{
+                margin-right: 1rem !important;
+            }
+
+            .order_info_title{
+                font-size: 12px !important;
+            }
+
+            .order_info_i{
+                height: auto !important;
+                gap: 5px;
+            }
+        }
 
         .order_price {
-            padding-left: 4rem !important;
+            font-size: 14px !important;
+            margin-top: 5px;
+            padding-left: 3rem !important;
         }
+
+        
     }
 }
 </style>
