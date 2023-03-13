@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="modalChP">
+    <div v-if="isShow" @click="isShow = false" class="modalChP">
         <div class="modalChP_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -60,12 +60,13 @@
                             Я не рекомендую этого исполнителя
                         </div>
                         <div class="var">
-                            <div class="inp_circle "></div>
-                            Задание выполнял другой исполнитель без согласования со мной
+                            <div class="inp_circle active"></div>
+                            <span>Задание выполнял другой исполнитель без согласования со мной</span>
                         </div>
                     </div>
+                    <div class="modal_btn">Оставить отзыв</div>
                 </div>
-                <div class="modal_btn">Оставить отзыв</div>
+                <div class="">⠀</div>
             </div>
         </div>
     </div>
@@ -73,11 +74,12 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: 'OrderInProgress',
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -225,11 +227,11 @@ export default {
         color: #22305F;
     }
 
-    .choose_vars{
+    .choose_vars {
         margin-top: 2rem;
     }
 
-    .var{
+    .var {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -237,7 +239,7 @@ export default {
         color: #22305F;
         font-size: 16px;
 
-        .inp_circle{
+        .inp_circle {
             width: 16px;
             height: 16px;
             border-radius: 50px;
@@ -245,9 +247,122 @@ export default {
             margin-right: 1rem;
         }
 
-        .inp_circle.active{
+        .inp_circle.active {
             border: 3px solid #FFA200;
         }
+    }
+}
+
+@media (max-height:700px) {
+    .modalChP .modalChP_i .modalChP_inner {
+        width: 100% !important;
+        height: 100vh !important;
+    }
+
+    .modalChP_i {
+        height: 100vh !important;
+        width: 100vw !important;
+        border-radius: 0 !important;
+        overflow: auto;
+        overflow-x: hidden;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 1rem;
+
+        .modal_title {
+            font-size: 18px !important;
+        }
+    }
+
+    .est_stars {
+        width: auto !important;
+        gap: 4px;
+    }
+}
+
+@media (max-width:321px) {
+
+    .modalChP_i {
+        width: 321px !important;
+        height: 100vh !important;
+    }
+
+    .modal_title {
+        font-size: 22px !important;
+        text-align: center;
+    }
+
+    .rating_guy {
+        font-size: 14px !important;
+    }
+
+    .estimations_guy {
+        .estimation_line {
+            font-size: 16px !important;
+
+            img {
+                height: 24px !important;
+                width: 24px !important;
+            }
+        }
+    }
+
+    .fbk_title {
+        font-size: 14px !important;
+    }
+
+    .fbk_sup {
+        font-size: 12px !important;
+        width: 261px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .input_fbk {
+        width: 261px !important;
+        height: 136px !important;
+    }
+
+    .input_hint {
+        font-size: 10px !important;
+        margin-top: 0 !important;
+    }
+
+    .info_yo {
+        margin-bottom: 1rem !important;
+        .info_yo_title {
+            font-size: 14px !important;
+        }
+
+        .info_yo_sup {
+            font-size: 12px !important;
+            width: 256px;
+        }
+
+        .var {
+            font-size: 12px !important;
+            gap: 10px;
+
+            span {
+                width: 224px;
+            }
+        }
+
+
+        .inp_circle {
+            margin: 0 !important;
+        }
+    }
+
+    .modal_btn {
+        width: 261px !important;
+        height: 35px !important;
+        background: #6FC727;
+        border-radius: 60px;
+        font-size: 14px !important;
+        margin-top: 2rem !important;
     }
 }
 </style>

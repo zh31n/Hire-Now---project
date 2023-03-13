@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="modalChP">
+    <div v-if="isShow" @click="isShow = false" class="modalChP">
         <div class="modalChP_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -12,50 +12,51 @@
                 <div class="choose_vars">
                     <div class="var">
                         <div class="inp_circle active"></div>
-                        Случайно выбрал не того исполнителя
+                        <span>Случайно выбрал не того исполнителя</span>
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Исполнитель изменил условия сотрудничества
+                        <span>Исполнитель изменил условия сотрудничества</span> 
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Исполнитель отказался выполнять задание
+                        <span>Исполнитель отказался выполнять задание</span>
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Исполнитель опоздал
+                        <span>Исполнитель опоздал</span>
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Работа выполнена не полностью или некачественно
+                        <span>Работа выполнена не полностью или некачественно</span>
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Я столкнулся с мошенничеством
+                        <span>Я столкнулся с мошенничеством</span>
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Задание перестало быть актуальным
+                        <span>Задание перестало быть актуальным</span>
                     </div>
                     <div class="var">
                         <div class="inp_circle "></div>
-                        Другая причина
+                        <span>Другая причина</span>
                     </div>
                 </div>
+                <div class="modal_btn">Продолжить</div>
             </div>
-            <div class="modal_btn">Продолжить</div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: 'OrderNoComplete',
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -281,5 +282,116 @@ export default {
         padding-left: 2rem;
     }
 
+}
+
+@media (max-width:321px) {
+
+    .modalChP_inner {
+        width: 321px !important;
+        height: 100vh !important;
+    }
+
+    .modal_title {
+        font-size: 22px !important;
+        text-align: center;
+    }
+
+    .rating_guy {
+        font-size: 14px !important;
+    }
+
+    .estimations_guy {
+        .estimation_line {
+            font-size: 16px !important;
+
+            img {
+                height: 24px !important;
+                width: 24px !important;
+            }
+        }
+    }
+
+    .fbk_title {
+        font-size: 14px !important;
+    }
+
+    .fbk_sup {
+        font-size: 12px !important;
+        width: 261px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .input_fbk {
+        width: 261px !important;
+        height: 136px !important;
+    }
+
+    .input_hint {
+        font-size: 10px !important;
+        margin-top: 0 !important;
+    }
+
+    .info_yo {
+        margin-bottom: 1rem !important;
+
+        .info_yo_title {
+            font-size: 14px !important;
+        }
+
+        .info_yo_sup {
+            font-size: 12px !important;
+            width: 256px;
+        }
+
+        .var {
+            font-size: 12px !important;
+            gap: 10px;
+
+            span {
+                width: 224px;
+            }
+        }
+
+
+        .inp_circle {
+            margin: 0 !important;
+        }
+    }
+
+    .modal_btn {
+        width: 261px !important;
+        height: 35px !important;
+        background: #6FC727;
+        border-radius: 60px;
+        font-size: 14px !important;
+        margin-top: 2rem !important;
+    }
+
+    .choose_vars{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        .var{
+            font-size: 12px !important;
+            gap: 10px;
+            display: flex;
+            justify-content: center !important;
+
+            span{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                width: 70%;
+            }
+
+            .inp_circle{
+                margin: 0 !important;
+            }
+        }
+    }
 }
 </style>

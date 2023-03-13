@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="modal_messages">
+    <div v-if="isShow" @click="isShow = false" class="modal_messages">
         <div class="modal_messages_i">
             <div class="close_img">
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
@@ -56,7 +56,7 @@
                         </div>
                         <img class="muted" src="../../assets/images/Modal/muted.svg" alt="">
                     </div>
-                    <div class="msg_messanger" >
+                    <div class="msg_messanger">
                         <div class="name_date_guy">
                             <div class="name">Владислав Support Y.</div>
                             <div class="date">02.02.23, 08:04</div>
@@ -93,11 +93,12 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: 'ModalMessages',
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -410,7 +411,7 @@ export default {
 
 @media (max-width: 750px) {
 
-    .msg_people{
+    .msg_people {
         border-bottom: 1px solid #828282;
         border-top: 1px solid #828282;
     }
@@ -437,45 +438,42 @@ export default {
         width: 95%;
     }
 
-    .name_date_guy{
+    .name_date_guy {
         width: 100% !important;
     }
 }
-@media (max-height: 897px){
-    .msg_messanger{
+
+@media (max-height: 897px) {
+    .msg_messanger {
         height: 75vh;
     }
 }
 
-@media (max-height: 750px){
-    .modal_messages_i{
+@media (max-height: 750px) {
+    .modal_messages_i {
         margin-top: 5rem !important;
     }
 
-    .msg_messanger{
+    .msg_messanger {
         height: 70vh;
     }
 }
 
-@media (max-height: 741px){
-    .msg_messanger{
+@media (max-height: 741px) {
+    .msg_messanger {
         height: 70vh !important;
     }
 }
 
-@media (max-height: 668px){
-    .msg_messanger{
+@media (max-height: 668px) {
+    .msg_messanger {
         height: 65vh !important;
     }
 }
 
-@media (max-height: 480px){
-    .msg_messanger{
+@media (max-height: 480px) {
+    .msg_messanger {
         height: 55vh;
     }
 }
-
-
-
-
 </style>

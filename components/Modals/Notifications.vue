@@ -72,6 +72,7 @@
 
 <script>
 export default {
+    name:'Notifications',
   data(){
     return {
       isShow: true,

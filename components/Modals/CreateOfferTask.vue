@@ -25,6 +25,7 @@
 
 <script >
 export default {
+    name:'CreateOfferTask',
   data(){
     return {
       isShow: true,

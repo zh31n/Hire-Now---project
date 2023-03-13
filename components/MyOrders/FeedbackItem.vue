@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isShow" @click="isShow=false" class="response_card">
+    <div v-if="isShow" @click="isShow = false" class="response_card">
         <div class="rc_ppl">
             <div class="person_img">
                 <img src="../../assets/images/orderCart/person.svg" alt="person">
@@ -19,7 +19,9 @@
             </div>
         </div>
         <div class="rc_info">
-            <div class="rc_info_price">Задание «HireNow дизайн» выполнено</div>
+            <div class="rc_info_price">
+                Задание «HireNow дизайн» <span>выполнено</span>
+            </div>
             <div class="rc_info_txt">
                 Санкт-Петербург! Если понадобится крутой сантехник,<br>
                 пишите нам! Мы нашли просто офигенного мужика на<br>
@@ -53,11 +55,12 @@
 
 <script>
 export default {
-  data(){
-    return {
-      isShow: true,
+    name: 'FeedBackItem',
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
@@ -149,6 +152,7 @@ export default {
         color: #22305F;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
 
         .ppl_tel_stars {
             margin-left: 1rem;
@@ -260,5 +264,84 @@ export default {
         }
     }
 
+}
+
+@media (max-width:321px) {
+    .rc_info {
+        width: 262px !important;
+        height: 335px !important;
+        padding: 0.86rem;
+
+        .rc_info_price {
+            margin-bottom: 5px;
+            font-size: 14px !important;
+
+            span{
+                color: #6FC727;
+            }
+        }
+
+        .payment_type {
+            margin-bottom: 1rem;
+            font-size: 12px !important;
+        }
+
+        .ppl_tel {
+            font-size: 12px !important;
+            font-weight: 700 !important;
+            margin-bottom: 3rem;
+        }
+
+        .rc_btns {
+            flex-direction: column-reverse !important;
+
+        }
+
+        .rc_btn_write {
+            width: 229px !important;
+            height: 34px !important;
+            font-size: 12px !important;
+            background-color: #F5F5F5 !important;
+        }
+
+        .rc_btn_choose {
+            width: 229px !important;
+            height: 30px !important;
+            font-size: 12px !important;
+        }
+
+        .rc_i_title {
+            font-size: 8px;
+        }
+    }
+
+    .rc_info_txt {
+        font-size: 10px !important;
+        width: 191px;
+        margin-bottom: 2rem !important;
+
+        // div {
+        //     margin-bottom: 1rem !important;
+        // }
+    }
+
+    .rc_func {
+        font-size: 10px !important;
+        margin-right: auto;
+        margin-left: auto;
+
+        .rc_funcs {
+            gap: 5px !important;
+        }
+    }
+
+    .rc_info .ppl_tel{
+        font-size: 16px !important;
+        margin-bottom: 2rem;
+
+        .ppl_tel_stars{
+            margin-left: 0.5rem;
+        }
+    }
 }
 </style>

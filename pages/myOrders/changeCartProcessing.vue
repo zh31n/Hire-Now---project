@@ -4,6 +4,16 @@
         <div class="container">
             <div class="changeCart_i">
                 <div class="r_side">
+                    <div class="o_info">
+                        <div class="o_info_i">
+                            <div class="order_name">Hire Now дизайн</div>
+                            <div class="o_price">до 6 000 руб.</div>
+                        </div>
+                        <span class="cheks">
+                            <img src="../../assets/images/orderCart/eye.svg" alt="eye">
+                            <span>112</span>
+                        </span>
+                    </div>
                     <div class="order_name">Hire Now дизайн</div>
                     <div class="o_price">до 6 000 руб.</div>
                     <span class="stat_order">
@@ -196,6 +206,39 @@ export default {
     gap: 25px;
 }
 
+.o_info {
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+    // align-items: center;
+    display: none;
+
+    .o_info_i {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .order_name {
+            font-size: 22px !important;
+        }
+
+        .o_price {
+            font-size: 18px !important;
+        }
+    }
+
+    .cheks {
+        img {
+            width: 20px;
+            height: 13px;
+        }
+
+        display: flex;
+        height: 13px;
+        align-items: center;
+        margin-top: 8px;
+    }
+}
+
 .all_c_title {
     font-size: 16px;
     font-weight: 700;
@@ -342,8 +385,6 @@ export default {
     font-size: 16px;
     color: #FFF;
     cursor: pointer;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .btn_cancel:last-child {
@@ -483,6 +524,130 @@ export default {
     .btn_cancel,
     .rc_btn_choose {
         width: 100% !important;
+    }
+}
+
+@media (max-width:321px) {
+
+    .changeCart {
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+    }
+
+    .o_info {
+        display: flex;
+
+        .o_price {
+            display: block !important;
+        }
+
+        .order_name {
+            display: block !important;
+        }
+    }
+
+    .o_price {
+        display: none;
+    }
+
+    .order_name {
+        display: none;
+    }
+
+    .stat_order {
+        .cheks {
+            display: none;
+        }
+    }
+
+    .btns_func {
+        .btn_f {
+            width: 131px;
+            height: 26px;
+            border: 1px solid #D9D9D9;
+            font-size: 12px !important;
+
+            .count_otclick {
+                width: 15px;
+                height: 15px;
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    .oi_title {
+        font-size: 12px !important;
+
+        div {
+            margin-top: 5px;
+            font-size: 12px !important;
+        }
+    }
+
+    .grey_block {
+        height: 125px !important;
+    }
+
+    .rc_btn_choose {
+        width: 262px !important;
+        height: 39px;
+        background: #6FC727;
+        border-radius: 60px;
+        font-size: 12px !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn_cancel {
+        width: 262px !important;
+        height: 39px;
+        font-size: 12px !important;
+    }
+
+    .all_c_title {
+        font-size: 18px !important;
+    }
+
+    .categ_s {
+        font-size: 12px !important;
+    }
+
+    .warning_order {
+        width: 262px;
+        height: 143px !important;
+        background: rgba(253, 234, 194, 0.5);
+        border-radius: 5px;
+        padding: 12px;
+
+        .warning_order_txt {
+            font-size: 12px !important;
+            line-height: 14px !important;
+        }
+
+        br {
+            display: block !important;
+        }
+    }
+
+    .rO_filters_btns {
+        width: 100%;
+        display: flex;
+        gap: 15px !important;
+
+        .rO_filter_btn {
+            width: 75px;
+            height: 24px;
+            font-size: 10px;
+        }
+    }
+
+    .details_order{
+        .btn_cancel{
+            margin-bottom: 0 !important;
+        }
+        .btn_cancel:last-child{
+            margin-top: 0.5rem !important;
+            margin-bottom: 1rem !important;
+        }
     }
 }
 </style>

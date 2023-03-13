@@ -2,7 +2,8 @@
   <div class="header">
     <ModalMessages style="display: none;"/>
     <Notifications style="display: none;"/>
-    <ModalChoosePerformer />
+    <ModalChoosePerformer style="display: none;"/>
+    <OrderInProgress />
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">
@@ -39,11 +40,12 @@
 import ModalMessages from './Modals/ModalMessages.vue';
 import ModalChoosePerformer from './Modals/ModalChoosePerformer.vue';
 import Notifications from './Modals/Notifications.vue';
+import OrderInProgress from './Modals/OrderInProgress.vue';
 
 
 
 export default {
-  components: { Notifications, ModalMessages,ModalChoosePerformer}
+  components: { Notifications, ModalMessages, ModalChoosePerformer, OrderInProgress }
 }
 </script>
 
