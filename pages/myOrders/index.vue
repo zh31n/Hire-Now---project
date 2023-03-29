@@ -5,6 +5,10 @@
             <div class="myOrders_i">
                 <div class="r_side">
                     <PanelInformation />
+                    <div class="none_tasks">
+                        <img src="../../assets/images/none_tasks.svg" alt="">
+                        <div class="no_ts_title">У вас нет созданных заданий</div>
+                    </div>
                     <div class="orderCart">
                         <div class="order_info">
                             <img src="../../assets/images/orderCart/Компьтерная помощь.svg" alt="">
@@ -177,6 +181,20 @@ export default {
         }
     }
 
+}
+
+.none_tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .no_ts_title{
+        font-size: 28px;
+        font-weight: 700;
+        color: #22305F;
+    }
 }
 
 @media (max-width: 1024px) {
