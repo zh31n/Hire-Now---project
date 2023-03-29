@@ -13,3 +13,12 @@ body,
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px !important;
+    width: auto;
+    padding: 0 !important;
+  }
+  
+}

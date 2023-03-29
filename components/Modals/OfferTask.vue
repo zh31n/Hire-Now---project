@@ -50,6 +50,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1100;
 
     .modal_task_i {
         width: 700px;

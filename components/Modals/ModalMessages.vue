@@ -5,9 +5,9 @@
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
             </div>
             <div class="modal_messages_inner">
-                <MessageDialogs style="display: none;" />
-                <div class="messanger" style="display: ;">
-                    <div class="messanger_empty" style="display: none;">
+                <MessageDialogs/>
+                <div class="messanger" style="display: none;">
+                    <div class="messanger_empty">
                         <img src="../../assets/images/Modal/big_msg.svg" alt="">
                         <div class="messanger_empty_title">Выберите, кому хотели бы написать</div>
                     </div>
@@ -92,8 +92,8 @@ export default {
 
 .modal_messages {
     position: fixed;
-    // top: 0;
-    // left: 0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, .3);
@@ -364,12 +364,12 @@ export default {
         }
         .msg_input_send{
             height: 50px !important;
-            border-top: 0 !important; 
+            border-top: 0 !important;
         }
         .msg_input_send_inp {
             width: 228px !important;
             height: 28px !important;
-            font-size: 10px !important; 
+            font-size: 10px !important;
         }
 
         .message_guy{
@@ -389,7 +389,7 @@ export default {
             }
 
             .date{
-                font-size: 10px !important; 
+                font-size: 10px !important;
             }
         }
     }

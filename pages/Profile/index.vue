@@ -44,22 +44,8 @@
                         </div>
                     </div>
                     <div class="profile_about_me">
-                        <div class="profile_about_me_mob" style="display: none;">
-                            <div class="profile_info_txt">
-                                <div class="profile_avg_estimate">
-                                    Средняя оценка 5.0
-                                    <img src="../../assets/images/Modal/Star.svg" alt="">
-                                    <span>(2 отзыва)</span>
-                                </div>
-                                <div class="profile_have_tasks">
-                                    Создал
-                                    <span>3 задания</span>
-                                </div>
-                            </div>
-                            <div class="p_views">
-                                <img src="../../assets/images/orderCart/eye.svg" alt="">
-                                <span>112</span> просмотров профиля
-                            </div>
+                        <div class="profile_about_me_mob">
+
                         </div>
                         <div class="little_about_me">
                             Немного о себе
@@ -134,7 +120,7 @@
                         </div>
                         <div class="opration_history">
                             <div class="oh_title">История операций</div>
-                            <div class="oh_select" style="display: none;">
+                            <div class="oh_select" >
                                 <select name="" id="">
                                     <option value="">за месяц</option>
                                 </select>
@@ -1563,7 +1549,7 @@ export default {
         .title{
             font-size: 18px !important;
             color: #22305F;
-            margin-bottom: 1rem !important; 
+            margin-bottom: 1rem !important;
         }
 
         .sup{

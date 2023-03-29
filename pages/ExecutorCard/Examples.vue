@@ -25,7 +25,7 @@
                         <img src="../../assets/images/Arrow.svg" alt="arrow">
                         <span>Вернуться в профиль</span>
                     </div>
-                    <div class="offer_tsk_btn" style="display: none;">Предложить задание</div>
+                    <div class="offer_tsk_btn" >Предложить задание</div>
                 </div>
                 <div class="side_offer">
                     <div class="offer_job_btn">Предложить задание</div>

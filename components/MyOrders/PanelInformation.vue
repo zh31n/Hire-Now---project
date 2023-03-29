@@ -7,11 +7,9 @@
         <div class="info">
             <span>Всего вы создали <span>3</span> задания, из них:</span>
             <div class="info_orders">
-                <div class="info_orders_ii">
-                    <span class='i_orders_item'>Открыто: <span>66</span></span>
-                    <span class='i_orders_item'>Выполняется: <span>2</span></span>
-                </div>
-                <span class='i_orders_item'>Выполнено: <span>243</span></span>
+              <span class='i_orders_item'>Открыто: <span>66</span></span>
+              <span class='i_orders_item'>Выполняется: <span>2</span></span>
+              <span class='i_orders_item'>Выполнено: <span>243</span></span>
             </div>
         </div>
         <div class="point_buis">

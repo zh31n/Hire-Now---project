@@ -37,7 +37,7 @@
                             <div class="count_otclick">5</div>
                         </div>
                     </div>
-                    <div class="responses_order" style="display: none;">
+                    <div class="responses_order" >
                         <div class="warning_order">
                             <img src="../../assets/images/orderCart/warning.svg" alt="">
                             <span class="warning_order_txt">
@@ -62,7 +62,7 @@
                             <RespCard />
                         </div>
                     </div>
-                    <div class="details_order" style="display: ;">
+                    <div class="details_order" >
                         <div class="order_info">
                             <div class="oi_title">
                                 Номер задания

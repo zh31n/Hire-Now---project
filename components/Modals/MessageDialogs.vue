@@ -64,7 +64,12 @@
 </template>
 <script>
 export default {
-    name: 'MessageDialogs'
+    name: 'MessageDialogs',
+  data() {
+    return {
+      isShow: true,
+    }
+  }
 }
 </script>
 

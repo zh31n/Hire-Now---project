@@ -1,10 +1,6 @@
 <template>
   <div class="header">
-    <ModalMessages style="display: none;"/>
-    <Notifications style="display: none;"/>
-    <ModalChoosePerformer style="display: none;"/>
-    <!-- <OrderInProgress /> -->
-    <!-- <CreatedOfferTask /> -->
+    <ModalMessages />
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">
@@ -26,7 +22,7 @@
           <img src="../assets/images/Сообщения.svg" alt="">
           <div class="dropD">
             <img src="../assets/images/bell.svg" style="position: relative;z-index: -1;" alt="">
-            <Notifications style="display: none;"/>
+            <Notifications />
           </div>
           <NuxtLink class="i_pr" to="/Profile">
             <img src="../assets/images/Аватар.svg" alt="">
@@ -40,15 +36,17 @@
 <script>
 import ModalMessages from './Modals/ModalMessages.vue';
 import ModalChoosePerformer from './Modals/ModalChoosePerformer.vue';
+import ModalChoosedPerformer from "~/components/Modals/ModalChoosedPerformer.vue";
 import Notifications from './Modals/Notifications.vue';
 import OrderInProgress from './Modals/OrderInProgress.vue';
 import OfferTask from './Modals/OfferTask.vue';
 import CreatedOfferTask from './Modals/CreatedOfferTask.vue';
+import OrderNoComplete from "~/components/Modals/OrderNoComplete.vue";
 
 
 
 export default {
-  components: { Notifications, ModalMessages, ModalChoosePerformer, OrderInProgress, OfferTask, CreatedOfferTask }
+  components: {OrderNoComplete, Notifications, ModalChoosedPerformer, ModalMessages, ModalChoosePerformer, OrderInProgress, OfferTask, CreatedOfferTask }
 }
 </script>
 
@@ -59,6 +57,9 @@ export default {
   position: relative;
 }
 .header {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
   position: fixed !important;
   background-color: white;
   width: 100%;
