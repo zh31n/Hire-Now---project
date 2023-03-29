@@ -197,7 +197,7 @@ export default {
   }
 }
 
-@media (max-width:460px) {
+@media (max-width:768px) {
   .down {
     flex-direction: column;
     align-items: center !important;

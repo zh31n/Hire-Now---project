@@ -267,7 +267,7 @@ export default {
 
 }
 
-@media (max-width: 321px) {
+@media (max-width: 768px) {
     .orderCart {
         width: 278px !important;
         height: 108px !important;

@@ -343,7 +343,7 @@ export default {
     }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 768px) {
     .close_img {
         display: none;
     }

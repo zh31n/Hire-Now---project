@@ -189,7 +189,7 @@ export default {
     }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 768px) {
     .panel_info{
         height: auto !important;
     }

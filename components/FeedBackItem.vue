@@ -105,7 +105,7 @@ export default {
     }
 }
 
-@media (max-width:321px){
+@media (max-width:768px){
 
     .fb_item{
         padding-bottom: 1rem !important;

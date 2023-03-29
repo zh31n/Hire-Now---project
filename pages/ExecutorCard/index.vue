@@ -794,23 +794,7 @@ export default {
     }
 }
 
-
-@media (max-width:360px) {
-    .avg_estimation {
-        flex-direction: column;
-        gap: 10px;
-
-        .stars {
-            margin-left: 0 !important;
-        }
-    }
-
-    .exr_info .status {
-        margin-left: 0;
-    }
-}
-
-@media (max-width:321px) {
+@media (max-width:768px) {
     .examples_job_mob {
         display: block !important;
     }

@@ -280,7 +280,7 @@ export default {
     }
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
 
     .modalChP_i {
         width: 321px !important;

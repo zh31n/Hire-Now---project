@@ -170,7 +170,7 @@ export default {
 
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
     .notifications {
         top: 42px;
         right: -13px;

@@ -160,7 +160,7 @@ export default {
     }
 }
 
-@media (max-width:320px) {
+@media (max-width:768px) {
     .modal_task .select {
         width: 90%;
 

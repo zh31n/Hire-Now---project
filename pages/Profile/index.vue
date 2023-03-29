@@ -1308,7 +1308,7 @@ export default {
     }
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
 
     .p_greeting {
         display: none;

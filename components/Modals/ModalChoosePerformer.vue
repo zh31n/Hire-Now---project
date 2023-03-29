@@ -175,7 +175,7 @@ export default {
     }
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
     .modal_title {
         font-size: 22px !important;
         margin-bottom: 2rem !important;

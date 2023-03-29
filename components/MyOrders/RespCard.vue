@@ -258,7 +258,7 @@ export default {
 
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
     .rc_info {
         width: 262px !important;
         height: 445px !important;

@@ -182,7 +182,7 @@ export default {
     }
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
     .msg_items{
         height: 70vh !important;
         overflow: auto;

@@ -527,7 +527,7 @@ export default {
     }
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
 
     .changeCart {
         padding-top: 5rem;

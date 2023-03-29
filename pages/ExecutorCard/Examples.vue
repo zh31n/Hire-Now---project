@@ -167,7 +167,7 @@ export default {
 }
 
 
-@media (max-width:321px) {
+@media (max-width:768px) {
     .side_offer{
         display: none !important;
     }

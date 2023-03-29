@@ -54,7 +54,7 @@ export default {
     border: 0;
 }
 
-@media (max-width:321px) {
+@media (max-width:768px) {
     .feedback_filters {
         align-items: flex-start;
         font-size: 12px !important; 
