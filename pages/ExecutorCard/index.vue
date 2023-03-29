@@ -74,7 +74,7 @@
                             </p>
                             <div class="btn_all_about">Показать полностью</div>
                         </div>
-                        <div class="examples_job_mob" >
+                        <div class="examples_job_mob">
                             <div class="exj_titlr">Примеры работ</div>
                             <div class="exm_job_line">
                                 <div class="exm_job_line_info">
@@ -126,7 +126,7 @@
                         </div>
                         <div class="types_work">
                             <div class="types_work_title">Виды выполняемых работ</div>
-                            <div class="tw_mob" >
+                            <div class="tw_mob">
                                 <div class="exm_job_line">
                                     <div class="exm_job_line_info">
                                         <!-- <div class="exm_job_img"></div> -->
@@ -228,7 +228,7 @@
                         <div class="btn_all_about" style="bottom: 0;margin-top: 3rem;">
                             Показать ещё
                         </div>
-                        <div class="offer_tsk_btn" >Предложить задание</div>
+                        <div class="offer_tsk_btn">Предложить задание</div>
                     </div>
                 </div>
             </div>
@@ -439,6 +439,8 @@ export default {
 }
 
 .examples_job {
+    margin-top: 1rem;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -672,6 +674,14 @@ export default {
             border-radius: 5px;
         }
     }
+}
+
+.tw_mob {
+    display: none;
+}
+
+.offer_tsk_btn {
+    display: none;
 }
 
 .rotated {
