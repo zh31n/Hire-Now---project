@@ -5,9 +5,9 @@
                 <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
             </div>
             <div class="modal_messages_inner">
-                <MessageDialogs/>
+                <MessageDialogs style="display: none;"/>
                 <div class="messanger">
-                    <div class="messanger_empty">
+                    <div class="messanger_empty" style="display: none;">
                         <img src="../../assets/images/Modal/big_msg.svg" alt="">
                         <div class="messanger_empty_title">Выберите, кому хотели бы написать</div>
                     </div>
@@ -58,7 +58,7 @@
 import MessageDialogs from './MessageDialogs.vue';
 
 export default {
-    name: "ModalMessages",
+    name: "ModalMessagesMessanger",
     data() {
         return {
             isShow: true,
@@ -354,7 +354,7 @@ export default {
     }
 
     .messanger {
-        display: none;
+        // display: none;
         width: 100% !important;
         padding-top: 2rem !important;
 

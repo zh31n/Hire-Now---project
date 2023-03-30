@@ -3,7 +3,7 @@
         <div class="input_d">
             <input type="text" name="" id="" placeholder="Введите имя для общения">
         </div>
-        <div class="close_img" style="display: none;">
+        <div class="close_img" style="display: none;" v-if="isShow" @click="isShow = false">
             <img src="../../assets/images/Modal/close.svg" alt="close button" class="close">
         </div>
         <div class="msg_items">
@@ -59,21 +59,77 @@
                 <div class="bl_o">2</div>
             </div>
         </div>
-
+        <div class="msg_items mobile">
+            <NuxtLink to="/Messages/1" class="msg_item active">
+                <img src="../../assets/images/Modal/Аватар.svg" alt="">
+                <div class="msg_item_txt">
+                    <span class="name">Владислав S.</span><br>
+                    <span>Был 01.02.22</span>
+                </div>
+                <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
+            </NuxtLink>
+            <NuxtLink to="/Messages/1" class="msg_item">
+                <img src="../../assets/images/Modal/Аватар.svg" alt="">
+                <div class="msg_item_txt">
+                    <span class="name">Владислав S.</span><br>
+                    <span>Был 01.02.22</span>
+                </div>
+                <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
+            </NuxtLink>
+            <NuxtLink to="/Messages/1" class="msg_item ">
+                <img src="../../assets/images/Modal/Аватар.svg" alt="">
+                <div class="msg_item_txt">
+                    <span class="name">Владислав S.</span><br>
+                    <span>Был 01.02.22</span>
+                </div>
+                <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
+            </NuxtLink>
+            <NuxtLink to="/Messages/1" class="msg_item">
+                <img src="../../assets/images/Modal/Аватар.svg" alt="">
+                <div class="msg_item_txt">
+                    <span class="name" style="color: orange;">Владислав S.</span><br>
+                    <span>Был 01.02.22</span>
+                </div>
+                <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
+                <div class="bl_o">2</div>
+            </NuxtLink>
+            <NuxtLink to="/Messages/1" class="msg_item">
+                <img src="../../assets/images/Modal/Аватар.svg" alt="">
+                <div class="msg_item_txt">
+                    <span class="name" style="color: orange;">Владислав S.</span><br>
+                    <span>Был 01.02.22</span>
+                </div>
+                <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
+                <div class="bl_o">2</div>
+            </NuxtLink>
+            <NuxtLink to="/Messages/1" class="msg_item">
+                <img src="../../assets/images/Modal/Аватар.svg" alt="">
+                <div class="msg_item_txt">
+                    <span class="name" style="color: orange;">Владислав S.</span><br>
+                    <span>Был 01.02.22</span>
+                </div>
+                <img class="trash" src="../../assets/images/Modal/trash.svg" alt="">
+                <div class="bl_o">2</div>
+            </NuxtLink>
+        </div>
     </div>
 </template>
 <script>
 export default {
     name: 'MessageDialogs',
-  data() {
-    return {
-      isShow: true,
+    data() {
+        return {
+            isShow: true,
+        }
     }
-  }
 }
 </script>
 
 <style scoped lang="scss">
+.msg_items.mobile {
+    display: none;
+}
+
 .dialogs {
     width: 350px;
     height: 665px;
@@ -183,10 +239,11 @@ export default {
 }
 
 @media (max-width:768px) {
-    .msg_items{
+    .msg_items {
         height: 70vh !important;
         overflow: auto;
     }
+
     .close_img {
         display: block !important;
         padding-left: 30px;
@@ -218,6 +275,13 @@ export default {
         width: 261px !important;
         margin-right: auto;
         margin-left: auto;
+    }
+    .msg_items{
+        display: none;
+    }
+
+    .msg_items.mobile {
+        display: block;
     }
 }
 </style>

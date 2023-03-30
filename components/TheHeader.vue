@@ -1,6 +1,5 @@
 <template>
   <div class="header">
-    <ModalMessages />
     <div class="container">
       <div class="header_i">
         <div class="mobile_burger">
@@ -22,7 +21,7 @@
           <img src="../assets/images/Сообщения.svg" alt="">
           <div class="dropD">
             <img src="../assets/images/bell.svg" style="position: relative;z-index: -1;" alt="">
-            <Notifications />
+            <Notifications style="display: none;"/>
           </div>
           <NuxtLink class="i_pr" to="/Profile">
             <img src="../assets/images/Аватар.svg" alt="">
