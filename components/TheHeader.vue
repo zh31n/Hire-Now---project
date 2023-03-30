@@ -58,13 +58,14 @@ export default {
 }
 .header {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   position: fixed !important;
   background-color: white;
   width: 100%;
   border-bottom: 1px solid #F0F0F0;
   height: 60px;
+  padding: 4px;
   // position: relative !important;
   z-index: 1000 !important;
 }

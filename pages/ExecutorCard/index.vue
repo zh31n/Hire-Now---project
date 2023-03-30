@@ -699,7 +699,7 @@ export default {
         align-items: center;
 
         .exr_inform {
-            margin-left: 0;
+            margin-left: 13px;
 
             .exr_age_city {
                 text-align: center;
